@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Iransans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb.ttf');
+}
+
+body,h1,h2,h3,h4,h5,h6,a,p{
+    font-family:Iransans !important;
+    
+}
+h1{
+    font-size:32px !important;
+    font-weight:300;
+}
+
+h2{
+    font-size:25px !important;
+    font-weight:300;
+}
+
+h3{
+    font-size:22px !important;
+    font-weight:300;
+}
+h4{
+    font-size:20px !important;
+}
+
+
+.phoneClass{
+    animation: jump-shaking 1.2s infinite;
+}
+
+.brandBox{
+    width: fit-content;
+    min-width: 12vw;
+}
+
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-5px) }
+    35% { transform: translateY(-5px) rotate(17deg) }
+    55% { transform: translateY(-5px) rotate(-17deg) }
+    65% { transform: translateY(-5px) rotate(17deg) }
+    75% { transform: translateY(-5px) rotate(-17deg) }
+    100% { transform: translateY(0) rotate(0) }
+}
+
+.logoSizeInfo{
+    width: 179px;
+    height: 34px;
+}
+
+
+@media (max-width: 577px){
+    .rtl .main-menu .menu-right .icon-nav .mobile-wishlist{
+        right: unset;
+        left: 30%;
+    }
+    
+    .mobile-accounttt{
+       position: fixed;
+        bottom: 20px;
+        right: 16%;
+        font-size: 0;
+        padding: 0;
+        z-index: 9;
+    }
+}
+
+
+.icon-size{
+    width: 23px !important;
+    height: 23px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    list-style: none !important;
+    margin-top: 1vw !important
+   
+}
+
+.icon-size img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+}
+
+.big-image-size{
+    width: 1000px !important;
+    height: 800px !important;
+}
+
+.big-image-size img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+}
+
+.small-image-size{
+    width: 320px !important;
+    height: 256px !important;
+}
+
+.small-image-size img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+}
+
+.breadcrumb-section{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumb-section .row {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+}
+
+.breadcrumb-section .col-sm-6 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-section .col-sm-6:first-child {
+    justify-content: flex-start;
+}
+
+.breadcrumb-section .col-sm-6:last-child {
+    display: flex !important;
+}
+
+.breadcrumb-item {
+    display: inline-flex !important;
+    width: fit-content !important;
+}
+
+
+.cart_qty_cls{
+    left:1px !important;
+}
+
+
+
+
+

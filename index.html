@@ -1,0 +1,3399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        transition: opacity ease-in 0.2s;
+      }
+      body[unresolved] {
+        opacity: 0;
+        display: block;
+        overflow: hidden;
+        position: relative;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="./css/landing_page.css" />
+    <link rel="icon" href="./images/favicon/1.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/1.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./FontAwesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="./css/vendors/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/vendors/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/vendors/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/vendors/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+    <title>
+      کالابیار | فروشگاه آنلاین قطعات لپ‌تاپ با گارانتی و بهترین قیمت
+    </title>
+    <meta
+      name="description"
+      content="کالابیار فروشگاه آنلاین قطعات لپ‌تاپ از جمله اس اس دی، رم، هارد، ال ای دی، کیبورد و سایر قطعات از برندهای معتبر مانند دل، ایسوس، لنوو، سامسونگ، ایسر و کینگستون. تمامی محصولات با گارانتی معتبر و ارسال سریع به سراسر کشور."
+    />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:type" content="" />
+    <meta
+      property="og:title"
+      content="کالابیار | فروشگاه آنلاین قطعات لپ‌تاپ با گارانتی و بهترین قیمت"
+    />
+    <meta property="og:description" content="" />
+    <meta
+      property="og:image"
+      content="https://kalabiar.com/storage/setting/mini1739268236.png"
+    />
+    <meta name="robots" content="" />
+    <meta name="product_id" content="" />
+    <meta name="product_name" content="" />
+    <meta name="product_price" content="" />
+    <meta name="product_price_old" content="" />
+    <meta name="availability" content="" />
+    <meta name="guarantee" content="" />
+    <style>
+      .rtl-table {
+        direction: rtl !important;
+        text-align: right !important;
+        width: 100% !important;
+      }
+      .rtl-table table {
+        width: 100% !important;
+      }
+
+      .rtl-table td {
+        text-align: right !important;
+        padding: 8px !important;
+        border: 1px solid #ccc !important;
+        white-space: normal !important;
+      }
+
+      ul {
+        list-style-type: disc !important;
+        padding-right: 20px !important;
+        direction: rtl !important;
+        text-align: right !important;
+      }
+      ul li {
+        direction: rtl !important;
+        text-align: right !important;
+      }
+      ol {
+        display: block !important;
+        padding-right: 1.5rem;
+        margin: 1em 0;
+        list-style-position: outside !important;
+        direction: rtl;
+        text-align: right;
+      }
+      ol li {
+        display: list-item !important;
+        direction: rtl !important;
+        text-align: right !important;
+        float: none !important;
+        width: 100% !important;
+      }
+      .spaceBetweenButtunandText {
+        margin-bottom: 2vw;
+      }
+    </style>
+    <meta
+      name="csrf-token"
+      content="cyQlPUc2UPP3mEDMU0sa4tUuD7M3oayX84wlCbGl"
+    />
+    <style>
+      :root {
+        --swal2-outline: 0 0 0 3px rgba(100, 150, 200, 0.5);
+        --swal2-container-padding: 0.625em;
+        --swal2-backdrop: rgba(0, 0, 0, 0.4);
+        --swal2-backdrop-transition: background-color 0.15s;
+        --swal2-width: 32em;
+        --swal2-padding: 0 0 1.25em;
+        --swal2-border: none;
+        --swal2-border-radius: 0.3125rem;
+        --swal2-background: white;
+        --swal2-color: #545454;
+        --swal2-show-animation: swal2-show 0.3s;
+        --swal2-hide-animation: swal2-hide 0.15s forwards;
+        --swal2-icon-zoom: 1;
+        --swal2-icon-animations: true;
+        --swal2-title-padding: 0.8em 1em 0;
+        --swal2-html-container-padding: 1em 1.6em 0.3em;
+        --swal2-input-border: 1px solid #d9d9d9;
+        --swal2-input-border-radius: 0.1875em;
+        --swal2-input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06),
+          0 0 0 3px transparent;
+        --swal2-input-background: transparent;
+        --swal2-input-transition: border-color 0.2s, box-shadow 0.2s;
+        --swal2-input-hover-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06),
+          0 0 0 3px transparent;
+        --swal2-input-focus-border: 1px solid #b4dbed;
+        --swal2-input-focus-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06),
+          0 0 0 3px rgba(100, 150, 200, 0.5);
+        --swal2-progress-step-background: #add8e6;
+        --swal2-validation-message-background: #f0f0f0;
+        --swal2-validation-message-color: #666;
+        --swal2-footer-border-color: #eee;
+        --swal2-footer-background: transparent;
+        --swal2-footer-color: inherit;
+        --swal2-timer-progress-bar-background: rgba(0, 0, 0, 0.3);
+        --swal2-close-button-position: initial;
+        --swal2-close-button-inset: auto;
+        --swal2-close-button-font-size: 2.5em;
+        --swal2-close-button-color: #ccc;
+        --swal2-close-button-transition: color 0.2s, box-shadow 0.2s;
+        --swal2-close-button-outline: initial;
+        --swal2-close-button-box-shadow: inset 0 0 0 3px transparent;
+        --swal2-close-button-focus-box-shadow: inset var(--swal2-outline);
+        --swal2-close-button-hover-transform: none;
+        --swal2-actions-justify-content: center;
+        --swal2-actions-width: auto;
+        --swal2-actions-margin: 1.25em auto 0;
+        --swal2-actions-padding: 0;
+        --swal2-actions-border-radius: 0;
+        --swal2-actions-background: transparent;
+        --swal2-action-button-transition: background-color 0.2s, box-shadow 0.2s;
+        --swal2-action-button-hover: black 10%;
+        --swal2-action-button-active: black 10%;
+        --swal2-confirm-button-box-shadow: none;
+        --swal2-confirm-button-border-radius: 0.25em;
+        --swal2-confirm-button-background-color: #7066e0;
+        --swal2-confirm-button-color: #fff;
+        --swal2-deny-button-box-shadow: none;
+        --swal2-deny-button-border-radius: 0.25em;
+        --swal2-deny-button-background-color: #dc3741;
+        --swal2-deny-button-color: #fff;
+        --swal2-cancel-button-box-shadow: none;
+        --swal2-cancel-button-border-radius: 0.25em;
+        --swal2-cancel-button-background-color: #6e7881;
+        --swal2-cancel-button-color: #fff;
+        --swal2-toast-show-animation: swal2-toast-show 0.5s;
+        --swal2-toast-hide-animation: swal2-toast-hide 0.1s forwards;
+        --swal2-toast-border: none;
+        --swal2-toast-box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075),
+          0 1px 2px hsl(0deg 0% 0% / 0.075), 1px 2px 4px hsl(0deg 0% 0% / 0.075),
+          1px 3px 8px hsl(0deg 0% 0% / 0.075),
+          2px 4px 16px hsl(0deg 0% 0% / 0.075);
+      }
+      [data-swal2-theme="dark"] {
+        --swal2-dark-theme-black: #19191a;
+        --swal2-dark-theme-white: #e1e1e1;
+        --swal2-background: var(--swal2-dark-theme-black);
+        --swal2-color: var(--swal2-dark-theme-white);
+        --swal2-footer-border-color: #555;
+        --swal2-input-background: color-mix(
+          in srgb,
+          var(--swal2-dark-theme-black),
+          var(--swal2-dark-theme-white) 10%
+        );
+        --swal2-validation-message-background: color-mix(
+          in srgb,
+          var(--swal2-dark-theme-black),
+          var(--swal2-dark-theme-white) 10%
+        );
+        --swal2-validation-message-color: var(--swal2-dark-theme-white);
+        --swal2-timer-progress-bar-background: rgba(255, 255, 255, 0.7);
+      }
+      @media (prefers-color-scheme: dark) {
+        [data-swal2-theme="auto"] {
+          --swal2-dark-theme-black: #19191a;
+          --swal2-dark-theme-white: #e1e1e1;
+          --swal2-background: var(--swal2-dark-theme-black);
+          --swal2-color: var(--swal2-dark-theme-white);
+          --swal2-footer-border-color: #555;
+          --swal2-input-background: color-mix(
+            in srgb,
+            var(--swal2-dark-theme-black),
+            var(--swal2-dark-theme-white) 10%
+          );
+          --swal2-validation-message-background: color-mix(
+            in srgb,
+            var(--swal2-dark-theme-black),
+            var(--swal2-dark-theme-white) 10%
+          );
+          --swal2-validation-message-color: var(--swal2-dark-theme-white);
+          --swal2-timer-progress-bar-background: rgba(255, 255, 255, 0.7);
+        }
+      }
+      body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown) {
+        overflow: hidden;
+      }
+      body.swal2-height-auto {
+        height: auto !important;
+      }
+      body.swal2-no-backdrop .swal2-container {
+        background-color: rgba(0, 0, 0, 0) !important;
+        pointer-events: none;
+      }
+      body.swal2-no-backdrop .swal2-container .swal2-popup {
+        pointer-events: all;
+      }
+      body.swal2-no-backdrop .swal2-container .swal2-modal {
+        box-shadow: 0 0 10px var(--swal2-backdrop);
+      }
+      body.swal2-toast-shown .swal2-container {
+        box-sizing: border-box;
+        width: 360px;
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        pointer-events: none;
+      }
+      body.swal2-toast-shown .swal2-container.swal2-top {
+        inset: 0 auto auto 50%;
+        transform: translateX(-50%);
+      }
+      body.swal2-toast-shown .swal2-container.swal2-top-end,
+      body.swal2-toast-shown .swal2-container.swal2-top-right {
+        inset: 0 0 auto auto;
+      }
+      body.swal2-toast-shown .swal2-container.swal2-top-start,
+      body.swal2-toast-shown .swal2-container.swal2-top-left {
+        inset: 0 auto auto 0;
+      }
+      body.swal2-toast-shown .swal2-container.swal2-center-start,
+      body.swal2-toast-shown .swal2-container.swal2-center-left {
+        inset: 50% auto auto 0;
+        transform: translateY(-50%);
+      }
+      body.swal2-toast-shown .swal2-container.swal2-center {
+        inset: 50% auto auto 50%;
+        transform: translate(-50%, -50%);
+      }
+      body.swal2-toast-shown .swal2-container.swal2-center-end,
+      body.swal2-toast-shown .swal2-container.swal2-center-right {
+        inset: 50% 0 auto auto;
+        transform: translateY(-50%);
+      }
+      body.swal2-toast-shown .swal2-container.swal2-bottom-start,
+      body.swal2-toast-shown .swal2-container.swal2-bottom-left {
+        inset: auto auto 0 0;
+      }
+      body.swal2-toast-shown .swal2-container.swal2-bottom {
+        inset: auto auto 0 50%;
+        transform: translateX(-50%);
+      }
+      body.swal2-toast-shown .swal2-container.swal2-bottom-end,
+      body.swal2-toast-shown .swal2-container.swal2-bottom-right {
+        inset: auto 0 0 auto;
+      }
+      @media print {
+        body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown) {
+          overflow-y: scroll !important;
+        }
+        body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown)
+          > [aria-hidden="true"] {
+          display: none;
+        }
+        body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown)
+          .swal2-container {
+          position: static !important;
+        }
+      }
+      div:where(.swal2-container) {
+        display: grid;
+        position: fixed;
+        z-index: 1060;
+        inset: 0;
+        box-sizing: border-box;
+        grid-template-areas: "top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";
+        grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(
+            min-content,
+            auto
+          );
+        height: 100%;
+        padding: var(--swal2-container-padding);
+        overflow-x: hidden;
+        transition: var(--swal2-backdrop-transition);
+        -webkit-overflow-scrolling: touch;
+      }
+      div:where(.swal2-container).swal2-backdrop-show,
+      div:where(.swal2-container).swal2-noanimation {
+        background: var(--swal2-backdrop);
+      }
+      div:where(.swal2-container).swal2-backdrop-hide {
+        background: rgba(0, 0, 0, 0) !important;
+      }
+      div:where(.swal2-container).swal2-top-start,
+      div:where(.swal2-container).swal2-center-start,
+      div:where(.swal2-container).swal2-bottom-start {
+        grid-template-columns: minmax(0, 1fr) auto auto;
+      }
+      div:where(.swal2-container).swal2-top,
+      div:where(.swal2-container).swal2-center,
+      div:where(.swal2-container).swal2-bottom {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+      div:where(.swal2-container).swal2-top-end,
+      div:where(.swal2-container).swal2-center-end,
+      div:where(.swal2-container).swal2-bottom-end {
+        grid-template-columns: auto auto minmax(0, 1fr);
+      }
+      div:where(.swal2-container).swal2-top-start > .swal2-popup {
+        align-self: start;
+      }
+      div:where(.swal2-container).swal2-top > .swal2-popup {
+        grid-column: 2;
+        place-self: start center;
+      }
+      div:where(.swal2-container).swal2-top-end > .swal2-popup,
+      div:where(.swal2-container).swal2-top-right > .swal2-popup {
+        grid-column: 3;
+        place-self: start end;
+      }
+      div:where(.swal2-container).swal2-center-start > .swal2-popup,
+      div:where(.swal2-container).swal2-center-left > .swal2-popup {
+        grid-row: 2;
+        align-self: center;
+      }
+      div:where(.swal2-container).swal2-center > .swal2-popup {
+        grid-column: 2;
+        grid-row: 2;
+        place-self: center center;
+      }
+      div:where(.swal2-container).swal2-center-end > .swal2-popup,
+      div:where(.swal2-container).swal2-center-right > .swal2-popup {
+        grid-column: 3;
+        grid-row: 2;
+        place-self: center end;
+      }
+      div:where(.swal2-container).swal2-bottom-start > .swal2-popup,
+      div:where(.swal2-container).swal2-bottom-left > .swal2-popup {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: end;
+      }
+      div:where(.swal2-container).swal2-bottom > .swal2-popup {
+        grid-column: 2;
+        grid-row: 3;
+        place-self: end center;
+      }
+      div:where(.swal2-container).swal2-bottom-end > .swal2-popup,
+      div:where(.swal2-container).swal2-bottom-right > .swal2-popup {
+        grid-column: 3;
+        grid-row: 3;
+        place-self: end end;
+      }
+      div:where(.swal2-container).swal2-grow-row > .swal2-popup,
+      div:where(.swal2-container).swal2-grow-fullscreen > .swal2-popup {
+        grid-column: 1/4;
+        width: 100%;
+      }
+      div:where(.swal2-container).swal2-grow-column > .swal2-popup,
+      div:where(.swal2-container).swal2-grow-fullscreen > .swal2-popup {
+        grid-row: 1/4;
+        align-self: stretch;
+      }
+      div:where(.swal2-container).swal2-no-transition {
+        transition: none !important;
+      }
+      div:where(.swal2-container)[popover] {
+        width: auto;
+        border: 0;
+      }
+      div:where(.swal2-container) div:where(.swal2-popup) {
+        display: none;
+        position: relative;
+        box-sizing: border-box;
+        grid-template-columns: minmax(0, 100%);
+        width: var(--swal2-width);
+        max-width: 100%;
+        padding: var(--swal2-padding);
+        border: var(--swal2-border);
+        border-radius: var(--swal2-border-radius);
+        background: var(--swal2-background);
+        color: var(--swal2-color);
+        font-family: inherit;
+        font-size: 1rem;
+        container-name: swal2-popup;
+      }
+      div:where(.swal2-container) div:where(.swal2-popup):focus {
+        outline: none;
+      }
+      div:where(.swal2-container) div:where(.swal2-popup).swal2-loading {
+        overflow-y: hidden;
+      }
+      div:where(.swal2-container) div:where(.swal2-popup).swal2-draggable {
+        cursor: grab;
+      }
+      div:where(.swal2-container)
+        div:where(.swal2-popup).swal2-draggable
+        div:where(.swal2-icon) {
+        cursor: grab;
+      }
+      div:where(.swal2-container) div:where(.swal2-popup).swal2-dragging {
+        cursor: grabbing;
+      }
+      div:where(.swal2-container)
+        div:where(.swal2-popup).swal2-dragging
+        div:where(.swal2-icon) {
+        cursor: grabbing;
+      }
+      div:where(.swal2-container) h2:where(.swal2-title) {
+        position: relative;
+        max-width: 100%;
+        margin: 0;
+        padding: var(--swal2-title-padding);
+        color: inherit;
+        font-size: 1.875em;
+        font-weight: 600;
+        text-align: center;
+        text-transform: none;
+        overflow-wrap: break-word;
+        cursor: initial;
+      }
+      div:where(.swal2-container) div:where(.swal2-actions) {
+        display: flex;
+        z-index: 1;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: var(--swal2-actions-justify-content);
+        width: var(--swal2-actions-width);
+        margin: var(--swal2-actions-margin);
+        padding: var(--swal2-actions-padding);
+        border-radius: var(--swal2-actions-border-radius);
+        background: var(--swal2-actions-background);
+      }
+      div:where(.swal2-container) div:where(.swal2-loader) {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 2.2em;
+        height: 2.2em;
+        margin: 0 1.875em;
+        animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+        border-width: 0.25em;
+        border-style: solid;
+        border-radius: 100%;
+        border-color: #2778c4 rgba(0, 0, 0, 0) #2778c4 rgba(0, 0, 0, 0);
+      }
+      div:where(.swal2-container) button:where(.swal2-styled) {
+        margin: 0.3125em;
+        padding: 0.625em 1.1em;
+        transition: var(--swal2-action-button-transition);
+        border: none;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
+        font-weight: 500;
+      }
+      div:where(.swal2-container) button:where(.swal2-styled):not([disabled]) {
+        cursor: pointer;
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-confirm) {
+        border-radius: var(--swal2-confirm-button-border-radius);
+        background: initial;
+        background-color: var(--swal2-confirm-button-background-color);
+        box-shadow: var(--swal2-confirm-button-box-shadow);
+        color: var(--swal2-confirm-button-color);
+        font-size: 1em;
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-confirm):hover {
+        background-color: color-mix(
+          in srgb,
+          var(--swal2-confirm-button-background-color),
+          var(--swal2-action-button-hover)
+        );
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-confirm):active {
+        background-color: color-mix(
+          in srgb,
+          var(--swal2-confirm-button-background-color),
+          var(--swal2-action-button-active)
+        );
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-deny) {
+        border-radius: var(--swal2-deny-button-border-radius);
+        background: initial;
+        background-color: var(--swal2-deny-button-background-color);
+        box-shadow: var(--swal2-deny-button-box-shadow);
+        color: var(--swal2-deny-button-color);
+        font-size: 1em;
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-deny):hover {
+        background-color: color-mix(
+          in srgb,
+          var(--swal2-deny-button-background-color),
+          var(--swal2-action-button-hover)
+        );
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-deny):active {
+        background-color: color-mix(
+          in srgb,
+          var(--swal2-deny-button-background-color),
+          var(--swal2-action-button-active)
+        );
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-cancel) {
+        border-radius: var(--swal2-cancel-button-border-radius);
+        background: initial;
+        background-color: var(--swal2-cancel-button-background-color);
+        box-shadow: var(--swal2-cancel-button-box-shadow);
+        color: var(--swal2-cancel-button-color);
+        font-size: 1em;
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-cancel):hover {
+        background-color: color-mix(
+          in srgb,
+          var(--swal2-cancel-button-background-color),
+          var(--swal2-action-button-hover)
+        );
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled):where(.swal2-cancel):active {
+        background-color: color-mix(
+          in srgb,
+          var(--swal2-cancel-button-background-color),
+          var(--swal2-action-button-active)
+        );
+      }
+      div:where(.swal2-container) button:where(.swal2-styled):focus-visible {
+        outline: none;
+        box-shadow: var(--swal2-action-button-focus-box-shadow);
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled)[disabled]:not(.swal2-loading) {
+        opacity: 0.4;
+      }
+      div:where(.swal2-container)
+        button:where(.swal2-styled)::-moz-focus-inner {
+        border: 0;
+      }
+      div:where(.swal2-container) div:where(.swal2-footer) {
+        margin: 1em 0 0;
+        padding: 1em 1em 0;
+        border-top: 1px solid var(--swal2-footer-border-color);
+        background: var(--swal2-footer-background);
+        color: var(--swal2-footer-color);
+        font-size: 1em;
+        text-align: center;
+        cursor: initial;
+      }
+      div:where(.swal2-container) .swal2-timer-progress-bar-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        grid-column: auto !important;
+        overflow: hidden;
+        border-bottom-right-radius: var(--swal2-border-radius);
+        border-bottom-left-radius: var(--swal2-border-radius);
+      }
+      div:where(.swal2-container) div:where(.swal2-timer-progress-bar) {
+        width: 100%;
+        height: 0.25em;
+        background: var(--swal2-timer-progress-bar-background);
+      }
+      div:where(.swal2-container) img:where(.swal2-image) {
+        max-width: 100%;
+        margin: 2em auto 1em;
+        cursor: initial;
+      }
+      div:where(.swal2-container) button:where(.swal2-close) {
+        position: var(--swal2-close-button-position);
+        inset: var(--swal2-close-button-inset);
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+        width: 1.2em;
+        height: 1.2em;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: -1.2em;
+        padding: 0;
+        overflow: hidden;
+        transition: var(--swal2-close-button-transition);
+        border: none;
+        border-radius: var(--swal2-border-radius);
+        outline: var(--swal2-close-button-outline);
+        background: rgba(0, 0, 0, 0);
+        color: var(--swal2-close-button-color);
+        font-family: monospace;
+        font-size: var(--swal2-close-button-font-size);
+        cursor: pointer;
+        justify-self: end;
+      }
+      div:where(.swal2-container) button:where(.swal2-close):hover {
+        transform: var(--swal2-close-button-hover-transform);
+        background: rgba(0, 0, 0, 0);
+        color: #f27474;
+      }
+      div:where(.swal2-container) button:where(.swal2-close):focus-visible {
+        outline: none;
+        box-shadow: var(--swal2-close-button-focus-box-shadow);
+      }
+      div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner {
+        border: 0;
+      }
+      div:where(.swal2-container) div:where(.swal2-html-container) {
+        z-index: 1;
+        justify-content: center;
+        margin: 0;
+        padding: var(--swal2-html-container-padding);
+        overflow: auto;
+        color: inherit;
+        font-size: 1.125em;
+        font-weight: normal;
+        line-height: normal;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        cursor: initial;
+      }
+      div:where(.swal2-container) input:where(.swal2-input),
+      div:where(.swal2-container) input:where(.swal2-file),
+      div:where(.swal2-container) textarea:where(.swal2-textarea),
+      div:where(.swal2-container) select:where(.swal2-select),
+      div:where(.swal2-container) div:where(.swal2-radio),
+      div:where(.swal2-container) label:where(.swal2-checkbox) {
+        margin: 1em 2em 3px;
+      }
+      div:where(.swal2-container) input:where(.swal2-input),
+      div:where(.swal2-container) input:where(.swal2-file),
+      div:where(.swal2-container) textarea:where(.swal2-textarea) {
+        box-sizing: border-box;
+        width: auto;
+        transition: var(--swal2-input-transition);
+        border: var(--swal2-input-border);
+        border-radius: var(--swal2-input-border-radius);
+        background: var(--swal2-input-background);
+        box-shadow: var(--swal2-input-box-shadow);
+        color: inherit;
+        font-size: 1.125em;
+      }
+      div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,
+      div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,
+      div:where(.swal2-container)
+        textarea:where(.swal2-textarea).swal2-inputerror {
+        border-color: #f27474 !important;
+        box-shadow: 0 0 2px #f27474 !important;
+      }
+      div:where(.swal2-container) input:where(.swal2-input):hover,
+      div:where(.swal2-container) input:where(.swal2-file):hover,
+      div:where(.swal2-container) textarea:where(.swal2-textarea):hover {
+        box-shadow: var(--swal2-input-hover-box-shadow);
+      }
+      div:where(.swal2-container) input:where(.swal2-input):focus,
+      div:where(.swal2-container) input:where(.swal2-file):focus,
+      div:where(.swal2-container) textarea:where(.swal2-textarea):focus {
+        border: var(--swal2-input-focus-border);
+        outline: none;
+        box-shadow: var(--swal2-input-focus-box-shadow);
+      }
+      div:where(.swal2-container) input:where(.swal2-input)::placeholder,
+      div:where(.swal2-container) input:where(.swal2-file)::placeholder,
+      div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder {
+        color: #ccc;
+      }
+      div:where(.swal2-container) .swal2-range {
+        margin: 1em 2em 3px;
+        background: var(--swal2-background);
+      }
+      div:where(.swal2-container) .swal2-range input {
+        width: 80%;
+      }
+      div:where(.swal2-container) .swal2-range output {
+        width: 20%;
+        color: inherit;
+        font-weight: 600;
+        text-align: center;
+      }
+      div:where(.swal2-container) .swal2-range input,
+      div:where(.swal2-container) .swal2-range output {
+        height: 2.625em;
+        padding: 0;
+        font-size: 1.125em;
+        line-height: 2.625em;
+      }
+      div:where(.swal2-container) .swal2-input {
+        height: 2.625em;
+        padding: 0 0.75em;
+      }
+      div:where(.swal2-container) .swal2-file {
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+        background: var(--swal2-input-background);
+        font-size: 1.125em;
+      }
+      div:where(.swal2-container) .swal2-textarea {
+        height: 6.75em;
+        padding: 0.75em;
+      }
+      div:where(.swal2-container) .swal2-select {
+        min-width: 50%;
+        max-width: 100%;
+        padding: 0.375em 0.625em;
+        background: var(--swal2-input-background);
+        color: inherit;
+        font-size: 1.125em;
+      }
+      div:where(.swal2-container) .swal2-radio,
+      div:where(.swal2-container) .swal2-checkbox {
+        align-items: center;
+        justify-content: center;
+        background: var(--swal2-background);
+        color: inherit;
+      }
+      div:where(.swal2-container) .swal2-radio label,
+      div:where(.swal2-container) .swal2-checkbox label {
+        margin: 0 0.6em;
+        font-size: 1.125em;
+      }
+      div:where(.swal2-container) .swal2-radio input,
+      div:where(.swal2-container) .swal2-checkbox input {
+        flex-shrink: 0;
+        margin: 0 0.4em;
+      }
+      div:where(.swal2-container) label:where(.swal2-input-label) {
+        display: flex;
+        justify-content: center;
+        margin: 1em auto 0;
+      }
+      div:where(.swal2-container) div:where(.swal2-validation-message) {
+        align-items: center;
+        justify-content: center;
+        margin: 1em 0 0;
+        padding: 0.625em;
+        overflow: hidden;
+        background: var(--swal2-validation-message-background);
+        color: var(--swal2-validation-message-color);
+        font-size: 1em;
+        font-weight: 300;
+      }
+      div:where(.swal2-container) div:where(.swal2-validation-message)::before {
+        content: "!";
+        display: inline-block;
+        width: 1.5em;
+        min-width: 1.5em;
+        height: 1.5em;
+        margin: 0 0.625em;
+        border-radius: 50%;
+        background-color: #f27474;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.5em;
+        text-align: center;
+      }
+      div:where(.swal2-container) .swal2-progress-steps {
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 100%;
+        margin: 1.25em auto;
+        padding: 0;
+        background: rgba(0, 0, 0, 0);
+        font-weight: 600;
+      }
+      div:where(.swal2-container) .swal2-progress-steps li {
+        display: inline-block;
+        position: relative;
+      }
+      div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step {
+        z-index: 20;
+        flex-shrink: 0;
+        width: 2em;
+        height: 2em;
+        border-radius: 2em;
+        background: #2778c4;
+        color: #fff;
+        line-height: 2em;
+        text-align: center;
+      }
+      div:where(.swal2-container)
+        .swal2-progress-steps
+        .swal2-progress-step.swal2-active-progress-step {
+        background: #2778c4;
+      }
+      div:where(.swal2-container)
+        .swal2-progress-steps
+        .swal2-progress-step.swal2-active-progress-step
+        ~ .swal2-progress-step {
+        background: var(--swal2-progress-step-background);
+        color: #fff;
+      }
+      div:where(.swal2-container)
+        .swal2-progress-steps
+        .swal2-progress-step.swal2-active-progress-step
+        ~ .swal2-progress-step-line {
+        background: var(--swal2-progress-step-background);
+      }
+      div:where(.swal2-container)
+        .swal2-progress-steps
+        .swal2-progress-step-line {
+        z-index: 10;
+        flex-shrink: 0;
+        width: 2.5em;
+        height: 0.4em;
+        margin: 0 -1px;
+        background: #2778c4;
+      }
+      div:where(.swal2-icon) {
+        position: relative;
+        box-sizing: content-box;
+        justify-content: center;
+        width: 5em;
+        height: 5em;
+        margin: 2.5em auto 0.6em;
+        zoom: var(--swal2-icon-zoom);
+        border: 0.25em solid rgba(0, 0, 0, 0);
+        border-radius: 50%;
+        border-color: #000;
+        font-family: inherit;
+        line-height: 5em;
+        cursor: default;
+        user-select: none;
+      }
+      div:where(.swal2-icon) .swal2-icon-content {
+        display: flex;
+        align-items: center;
+        font-size: 3.75em;
+      }
+      div:where(.swal2-icon).swal2-error {
+        border-color: #f27474;
+        color: #f27474;
+      }
+      div:where(.swal2-icon).swal2-error .swal2-x-mark {
+        position: relative;
+        flex-grow: 1;
+      }
+      div:where(.swal2-icon).swal2-error [class^="swal2-x-mark-line"] {
+        display: block;
+        position: absolute;
+        top: 2.3125em;
+        width: 2.9375em;
+        height: 0.3125em;
+        border-radius: 0.125em;
+        background-color: #f27474;
+      }
+      div:where(.swal2-icon).swal2-error
+        [class^="swal2-x-mark-line"][class$="left"] {
+        left: 1.0625em;
+        transform: rotate(45deg);
+      }
+      div:where(.swal2-icon).swal2-error
+        [class^="swal2-x-mark-line"][class$="right"] {
+        right: 1em;
+        transform: rotate(-45deg);
+      }
+      @container swal2-popup style(--swal2-icon-animations:true) {
+        div:where(.swal2-icon).swal2-error.swal2-icon-show {
+          animation: swal2-animate-error-icon 0.5s;
+        }
+        div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark {
+          animation: swal2-animate-error-x-mark 0.5s;
+        }
+      }
+      div:where(.swal2-icon).swal2-warning {
+        border-color: #f8bb86;
+        color: #f8bb86;
+      }
+      @container swal2-popup style(--swal2-icon-animations:true) {
+        div:where(.swal2-icon).swal2-warning.swal2-icon-show {
+          animation: swal2-animate-error-icon 0.5s;
+        }
+        div:where(.swal2-icon).swal2-warning.swal2-icon-show
+          .swal2-icon-content {
+          animation: swal2-animate-i-mark 0.5s;
+        }
+      }
+      div:where(.swal2-icon).swal2-info {
+        border-color: #3fc3ee;
+        color: #3fc3ee;
+      }
+      @container swal2-popup style(--swal2-icon-animations:true) {
+        div:where(.swal2-icon).swal2-info.swal2-icon-show {
+          animation: swal2-animate-error-icon 0.5s;
+        }
+        div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content {
+          animation: swal2-animate-i-mark 0.8s;
+        }
+      }
+      div:where(.swal2-icon).swal2-question {
+        border-color: #87adbd;
+        color: #87adbd;
+      }
+      @container swal2-popup style(--swal2-icon-animations:true) {
+        div:where(.swal2-icon).swal2-question.swal2-icon-show {
+          animation: swal2-animate-error-icon 0.5s;
+        }
+        div:where(.swal2-icon).swal2-question.swal2-icon-show
+          .swal2-icon-content {
+          animation: swal2-animate-question-mark 0.8s;
+        }
+      }
+      div:where(.swal2-icon).swal2-success {
+        border-color: #a5dc86;
+        color: #a5dc86;
+      }
+      div:where(.swal2-icon).swal2-success
+        [class^="swal2-success-circular-line"] {
+        position: absolute;
+        width: 3.75em;
+        height: 7.5em;
+        border-radius: 50%;
+      }
+      div:where(.swal2-icon).swal2-success
+        [class^="swal2-success-circular-line"][class$="left"] {
+        top: -0.4375em;
+        left: -2.0635em;
+        transform: rotate(-45deg);
+        transform-origin: 3.75em 3.75em;
+        border-radius: 7.5em 0 0 7.5em;
+      }
+      div:where(.swal2-icon).swal2-success
+        [class^="swal2-success-circular-line"][class$="right"] {
+        top: -0.6875em;
+        left: 1.875em;
+        transform: rotate(-45deg);
+        transform-origin: 0 3.75em;
+        border-radius: 0 7.5em 7.5em 0;
+      }
+      div:where(.swal2-icon).swal2-success .swal2-success-ring {
+        position: absolute;
+        z-index: 2;
+        top: -0.25em;
+        left: -0.25em;
+        box-sizing: content-box;
+        width: 100%;
+        height: 100%;
+        border: 0.25em solid rgba(165, 220, 134, 0.3);
+        border-radius: 50%;
+      }
+      div:where(.swal2-icon).swal2-success .swal2-success-fix {
+        position: absolute;
+        z-index: 1;
+        top: 0.5em;
+        left: 1.625em;
+        width: 0.4375em;
+        height: 5.625em;
+        transform: rotate(-45deg);
+      }
+      div:where(.swal2-icon).swal2-success [class^="swal2-success-line"] {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        height: 0.3125em;
+        border-radius: 0.125em;
+        background-color: #a5dc86;
+      }
+      div:where(.swal2-icon).swal2-success
+        [class^="swal2-success-line"][class$="tip"] {
+        top: 2.875em;
+        left: 0.8125em;
+        width: 1.5625em;
+        transform: rotate(45deg);
+      }
+      div:where(.swal2-icon).swal2-success
+        [class^="swal2-success-line"][class$="long"] {
+        top: 2.375em;
+        right: 0.5em;
+        width: 2.9375em;
+        transform: rotate(-45deg);
+      }
+      @container swal2-popup style(--swal2-icon-animations:true) {
+        div:where(.swal2-icon).swal2-success.swal2-icon-show
+          .swal2-success-line-tip {
+          animation: swal2-animate-success-line-tip 0.75s;
+        }
+        div:where(.swal2-icon).swal2-success.swal2-icon-show
+          .swal2-success-line-long {
+          animation: swal2-animate-success-line-long 0.75s;
+        }
+        div:where(.swal2-icon).swal2-success.swal2-icon-show
+          .swal2-success-circular-line-right {
+          animation: swal2-rotate-success-circular-line 4.25s ease-in;
+        }
+      }
+      [class^="swal2"] {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      .swal2-show {
+        animation: var(--swal2-show-animation);
+      }
+      .swal2-hide {
+        animation: var(--swal2-hide-animation);
+      }
+      .swal2-noanimation {
+        transition: none;
+      }
+      .swal2-scrollbar-measure {
+        position: absolute;
+        top: -9999px;
+        width: 50px;
+        height: 50px;
+        overflow: scroll;
+      }
+      .swal2-rtl .swal2-close {
+        margin-right: initial;
+        margin-left: 0;
+      }
+      .swal2-rtl .swal2-timer-progress-bar {
+        right: 0;
+        left: auto;
+      }
+      .swal2-toast {
+        box-sizing: border-box;
+        grid-column: 1/4 !important;
+        grid-row: 1/4 !important;
+        grid-template-columns: min-content auto min-content;
+        padding: 1em;
+        overflow-y: hidden;
+        border: var(--swal2-toast-border);
+        background: var(--swal2-background);
+        box-shadow: var(--swal2-toast-box-shadow);
+        pointer-events: all;
+      }
+      .swal2-toast > * {
+        grid-column: 2;
+      }
+      .swal2-toast h2:where(.swal2-title) {
+        margin: 0.5em 1em;
+        padding: 0;
+        font-size: 1em;
+        text-align: initial;
+      }
+      .swal2-toast .swal2-loading {
+        justify-content: center;
+      }
+      .swal2-toast input:where(.swal2-input) {
+        height: 2em;
+        margin: 0.5em;
+        font-size: 1em;
+      }
+      .swal2-toast .swal2-validation-message {
+        font-size: 1em;
+      }
+      .swal2-toast div:where(.swal2-footer) {
+        margin: 0.5em 0 0;
+        padding: 0.5em 0 0;
+        font-size: 0.8em;
+      }
+      .swal2-toast button:where(.swal2-close) {
+        grid-column: 3/3;
+        grid-row: 1/99;
+        align-self: center;
+        width: 0.8em;
+        height: 0.8em;
+        margin: 0;
+        font-size: 2em;
+      }
+      .swal2-toast div:where(.swal2-html-container) {
+        margin: 0.5em 1em;
+        padding: 0;
+        overflow: initial;
+        font-size: 1em;
+        text-align: initial;
+      }
+      .swal2-toast div:where(.swal2-html-container):empty {
+        padding: 0;
+      }
+      .swal2-toast .swal2-loader {
+        grid-column: 1;
+        grid-row: 1/99;
+        align-self: center;
+        width: 2em;
+        height: 2em;
+        margin: 0.25em;
+      }
+      .swal2-toast .swal2-icon {
+        grid-column: 1;
+        grid-row: 1/99;
+        align-self: center;
+        width: 2em;
+        min-width: 2em;
+        height: 2em;
+        margin: 0 0.5em 0 0;
+      }
+      .swal2-toast .swal2-icon .swal2-icon-content {
+        display: flex;
+        align-items: center;
+        font-size: 1.8em;
+        font-weight: bold;
+      }
+      .swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+        width: 2em;
+        height: 2em;
+      }
+      .swal2-toast .swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+        top: 0.875em;
+        width: 1.375em;
+      }
+      .swal2-toast
+        .swal2-icon.swal2-error
+        [class^="swal2-x-mark-line"][class$="left"] {
+        left: 0.3125em;
+      }
+      .swal2-toast
+        .swal2-icon.swal2-error
+        [class^="swal2-x-mark-line"][class$="right"] {
+        right: 0.3125em;
+      }
+      .swal2-toast div:where(.swal2-actions) {
+        justify-content: flex-start;
+        height: auto;
+        margin: 0;
+        margin-top: 0.5em;
+        padding: 0 0.5em;
+      }
+      .swal2-toast button:where(.swal2-styled) {
+        margin: 0.25em 0.5em;
+        padding: 0.4em 0.6em;
+        font-size: 1em;
+      }
+      .swal2-toast .swal2-success {
+        border-color: #a5dc86;
+      }
+      .swal2-toast .swal2-success [class^="swal2-success-circular-line"] {
+        position: absolute;
+        width: 1.6em;
+        height: 3em;
+        border-radius: 50%;
+      }
+      .swal2-toast
+        .swal2-success
+        [class^="swal2-success-circular-line"][class$="left"] {
+        top: -0.8em;
+        left: -0.5em;
+        transform: rotate(-45deg);
+        transform-origin: 2em 2em;
+        border-radius: 4em 0 0 4em;
+      }
+      .swal2-toast
+        .swal2-success
+        [class^="swal2-success-circular-line"][class$="right"] {
+        top: -0.25em;
+        left: 0.9375em;
+        transform-origin: 0 1.5em;
+        border-radius: 0 4em 4em 0;
+      }
+      .swal2-toast .swal2-success .swal2-success-ring {
+        width: 2em;
+        height: 2em;
+      }
+      .swal2-toast .swal2-success .swal2-success-fix {
+        top: 0;
+        left: 0.4375em;
+        width: 0.4375em;
+        height: 2.6875em;
+      }
+      .swal2-toast .swal2-success [class^="swal2-success-line"] {
+        height: 0.3125em;
+      }
+      .swal2-toast .swal2-success [class^="swal2-success-line"][class$="tip"] {
+        top: 1.125em;
+        left: 0.1875em;
+        width: 0.75em;
+      }
+      .swal2-toast .swal2-success [class^="swal2-success-line"][class$="long"] {
+        top: 0.9375em;
+        right: 0.1875em;
+        width: 1.375em;
+      }
+      @container swal2-popup style(--swal2-icon-animations:true) {
+        .swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {
+          animation: swal2-toast-animate-success-line-tip 0.75s;
+        }
+        .swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {
+          animation: swal2-toast-animate-success-line-long 0.75s;
+        }
+      }
+      .swal2-toast.swal2-show {
+        animation: var(--swal2-toast-show-animation);
+      }
+      .swal2-toast.swal2-hide {
+        animation: var(--swal2-toast-hide-animation);
+      }
+      @keyframes swal2-show {
+        0% {
+          transform: translate3d(0, -50px, 0) scale(0.9);
+          opacity: 0;
+        }
+        100% {
+          transform: translate3d(0, 0, 0) scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes swal2-hide {
+        0% {
+          transform: translate3d(0, 0, 0) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translate3d(0, -50px, 0) scale(0.9);
+          opacity: 0;
+        }
+      }
+      @keyframes swal2-animate-success-line-tip {
+        0% {
+          top: 1.1875em;
+          left: 0.0625em;
+          width: 0;
+        }
+        54% {
+          top: 1.0625em;
+          left: 0.125em;
+          width: 0;
+        }
+        70% {
+          top: 2.1875em;
+          left: -0.375em;
+          width: 3.125em;
+        }
+        84% {
+          top: 3em;
+          left: 1.3125em;
+          width: 1.0625em;
+        }
+        100% {
+          top: 2.8125em;
+          left: 0.8125em;
+          width: 1.5625em;
+        }
+      }
+      @keyframes swal2-animate-success-line-long {
+        0% {
+          top: 3.375em;
+          right: 2.875em;
+          width: 0;
+        }
+        65% {
+          top: 3.375em;
+          right: 2.875em;
+          width: 0;
+        }
+        84% {
+          top: 2.1875em;
+          right: 0;
+          width: 3.4375em;
+        }
+        100% {
+          top: 2.375em;
+          right: 0.5em;
+          width: 2.9375em;
+        }
+      }
+      @keyframes swal2-rotate-success-circular-line {
+        0% {
+          transform: rotate(-45deg);
+        }
+        5% {
+          transform: rotate(-45deg);
+        }
+        12% {
+          transform: rotate(-405deg);
+        }
+        100% {
+          transform: rotate(-405deg);
+        }
+      }
+      @keyframes swal2-animate-error-x-mark {
+        0% {
+          margin-top: 1.625em;
+          transform: scale(0.4);
+          opacity: 0;
+        }
+        50% {
+          margin-top: 1.625em;
+          transform: scale(0.4);
+          opacity: 0;
+        }
+        80% {
+          margin-top: -0.375em;
+          transform: scale(1.15);
+        }
+        100% {
+          margin-top: 0;
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes swal2-animate-error-icon {
+        0% {
+          transform: rotateX(100deg);
+          opacity: 0;
+        }
+        100% {
+          transform: rotateX(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes swal2-rotate-loading {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes swal2-animate-question-mark {
+        0% {
+          transform: rotateY(-360deg);
+        }
+        100% {
+          transform: rotateY(0);
+        }
+      }
+      @keyframes swal2-animate-i-mark {
+        0% {
+          transform: rotateZ(45deg);
+          opacity: 0;
+        }
+        25% {
+          transform: rotateZ(-25deg);
+          opacity: 0.4;
+        }
+        50% {
+          transform: rotateZ(15deg);
+          opacity: 0.8;
+        }
+        75% {
+          transform: rotateZ(-5deg);
+          opacity: 1;
+        }
+        100% {
+          transform: rotateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes swal2-toast-show {
+        0% {
+          transform: translateY(-0.625em) rotateZ(2deg);
+        }
+        33% {
+          transform: translateY(0) rotateZ(-2deg);
+        }
+        66% {
+          transform: translateY(0.3125em) rotateZ(2deg);
+        }
+        100% {
+          transform: translateY(0) rotateZ(0deg);
+        }
+      }
+      @keyframes swal2-toast-hide {
+        100% {
+          transform: rotateZ(1deg);
+          opacity: 0;
+        }
+      }
+      @keyframes swal2-toast-animate-success-line-tip {
+        0% {
+          top: 0.5625em;
+          left: 0.0625em;
+          width: 0;
+        }
+        54% {
+          top: 0.125em;
+          left: 0.125em;
+          width: 0;
+        }
+        70% {
+          top: 0.625em;
+          left: -0.25em;
+          width: 1.625em;
+        }
+        84% {
+          top: 1.0625em;
+          left: 0.75em;
+          width: 0.5em;
+        }
+        100% {
+          top: 1.125em;
+          left: 0.1875em;
+          width: 0.75em;
+        }
+      }
+      @keyframes swal2-toast-animate-success-line-long {
+        0% {
+          top: 1.625em;
+          right: 1.375em;
+          width: 0;
+        }
+        65% {
+          top: 1.25em;
+          right: 0.9375em;
+          width: 0;
+        }
+        84% {
+          top: 0.9375em;
+          right: 0;
+          width: 1.125em;
+        }
+        100% {
+          top: 0.9375em;
+          right: 0.1875em;
+          width: 1.375em;
+        }
+      }
+    </style>
+
+  </head>
+  <body class="theme-color-1 rtl">
+
+
+<header>
+    <!-- <div class="mobile-fix-option"></div> -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="header-contact">
+                      <ul class="list-unstyled d-flex align-items-center gap-3">
+
+                        <li>خوش آمدید</li>
+                    
+                        <!-- Logged-in User Dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle text-secondary" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user"></i> اکانت من
+                            </a>
+                    
+                            <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a class="dropdown-item" href="https://kalabiar.com/dashboard">پروفایل من</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://kalabiar.com/logout">خروج</a>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="tel:02157834000" style="color:#999999" class="nav-contact">
+                                <i class="fa fa-phone phoneClass"></i>
+                                تماس با ما: 02157834000
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main-menu">
+                    <div class="menu-left">
+                        <div class="navbar">
+                            <a href="javascript:void(0)" onclick="openNav()">
+                                <div class="bar-style"><i class="fa fa-bars sidebar-bar" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="sidebar-overlay" onclick="closeNav()"></a>
+                                <nav>
+                                    <div onclick="closeNav()">
+                                        <div class="sidebar-back text-start"><i class="fa fa-angle-right pe-2"
+                                                                                aria-hidden="true"></i> برگشت
+                                        </div>
+                                    </div>
+                                    <ul id="sub-menu" class="sm pixelstrap sm-vertical">
+                                                                                    <li>
+                                                    <a href="https://kalabiar.com/blogs">بلاگ</a>
+                                                                                                                                                                                                            </li>
+                                                                                    <li>
+                                                    <a href="https://www.kalabiar.com/products">محصولات</a>
+                                                                                                                                                                                                            </li>
+                                                                                    <li>
+                                                    <a href="https://kalabiar.com/contactus">تماس با ما</a>
+                                                                                                                                                                                                            </li>
+                                                                                    <li>
+                                                    <a href="https://kalabiar.com/aboutus">درباره ما</a>
+                                                                                                                                                                                                            </li>
+                                                                                    <li>
+                                                    <a href="https://kalabiar.com/news">اخبار</a>
+                                                                                                                                                                                                            </li>
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="brand-logo">
+                            <a href="/"><img src="https://kalabiar.com/storage/setting/logo1729075469.png"
+                                             class="img-fluid logoSizeInfo blur-up lazyload"
+                                             alt="Kalabiar"></a>
+                        </div>
+                    </div>
+                    <div class="menu-right pull-right">
+                        <div>
+                            <nav id="main-nav">
+                                <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
+                                <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                                    <li>
+                                        <div class="mobile-back text-end">برگشت<i class="fa fa-angle-right ps-2"
+                                                                                  aria-hidden="true"></i></div>
+                                    </li>
+
+                                                                            <li>
+                                                                                    <a href="https://kalabiar.com/blogs">بلاگ</a>
+                                                                                                                                        
+                                                                                </li>
+                                                                            <li>
+                                                                                    <a href="https://www.kalabiar.com/products">محصولات</a>
+                                                                                                                                        
+                                                                                </li>
+                                                                            <li>
+                                                                                    <a href="https://kalabiar.com/contactus">تماس با ما</a>
+                                                                                                                                        
+                                                                                </li>
+                                                                            <li>
+                                                                                    <a href="https://kalabiar.com/aboutus">درباره ما</a>
+                                                                                                                                        
+                                                                                </li>
+                                                                            <li>
+                                                                                    <a href="https://kalabiar.com/news">اخبار</a>
+                                                                                                                                        
+                                                                                </li>
+                                    
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <div class="icon-nav">
+                                <ul >
+                                    <li class="onhover-div mobile-search">
+                                        <div class="icon-size "><img src="./images/icon/search.png"
+                                                  onclick="openSearch()"
+                                                  class="img-fluid lazyload" alt=""> <i class="ti-search"
+                                                                                                onclick="openSearch()"></i>
+                                        </div>
+                                        <div id="search-overlay" class="search-overlay">
+                                            <div> <span class="closebtn" onclick="closeSearch()"
+                                                        title="Close Overlay">×</span>
+                                                <div class="overlay-content">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xl-12">
+                                                                <form action="https://kalabiar.com/search" method="post">
+                                                                    <input type="hidden" name="_token" value="cyQlPUc2UPP3mEDMU0sa4tUuD7M3oayX84wlCbGl" autocomplete="off">                                                                    <div class="form-group">
+                                                                        <input type="text" name="search" class="form-control"
+                                                                               id=""
+                                                                               placeholder="جستجو ... ">
+                                                                    </div>
+                                                                    <button type="submit" class="btn btn-primary"><i class="fa-brands fa-searchengin"></i></button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </li>
+                                    <li class="onhover-div mobile-cart ">
+                                      <div class="icon-size"><img src="https://kalabiar.com/assets-front/images/icon/cart.png"
+                                                class="img-fluid  lazyload" alt=""> <i
+                                              class="ti-shopping-cart"></i></div>
+                                      <span class="cart_qty_cls">3</span>
+                                      <ul class="show-div shopping-cart" id="text-size">
+                                                                                              <li>
+                                                  <div class="media">
+                                                      <a href="/product/KB-LENOVO-IDEAPAD-320-LIGHT-CABLE">
+                                                          <img alt="KB LENOVO IDEAPAD 320 LIGHT CABLE - کیبورد لپ تاپ لنووو" class="me-3"
+                                                               src="https://kalabiar.com/storage/product/LENOVO-IDEAPAD-320-LIGHT-CABLE1736149709.jpg">
+                                                      </a>
+                                                      <div class="media-body">
+                                                          <a href="/product/KB-LENOVO-IDEAPAD-320-LIGHT-CABLE">
+                                                              <p>KB LENOVO IDEAPAD 320 LIGHT CABLE - کیبورد لپ تاپ لنووو</p>
+                                                          </a>
+                                                          <h5>
+                                                              <span>3 * 1500000 تومان</span>
+                                                          </h5>
+                                                      </div>
+                                                  </div>
+                                                  <div class="close-circle">
+                                                      <a href="#">
+                                                          <i class="fa fa-times deleteCartProduct" data-cart-id="215"
+                                                             data-product-id="GM6fNt4QUx" aria-hidden="true"></i>
+                                                      </a>
+                                                  </div>
+                                              </li>
+                                                                                              <li>
+                                                  <div class="media">
+                                                      <a href="/product/KB-LENOVO-THINKPAD-E15">
+                                                          <img alt="KB LENOVO THINKPAD E15 - کیبورد لپ تاپ لنووو" class="me-3"
+                                                               src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-E151736148964.jpg">
+                                                      </a>
+                                                      <div class="media-body">
+                                                          <a href="/product/KB-LENOVO-THINKPAD-E15">
+                                                              <p>KB LENOVO THINKPAD E15 - کیبورد لپ تاپ لنووو</p>
+                                                          </a>
+                                                          <h5>
+                                                              <span>1 * 1900000 تومان</span>
+                                                          </h5>
+                                                      </div>
+                                                  </div>
+                                                  <div class="close-circle">
+                                                      <a href="#">
+                                                          <i class="fa fa-times deleteCartProduct" data-cart-id="215"
+                                                             data-product-id="frkdX6EMmR" aria-hidden="true"></i>
+                                                      </a>
+                                                  </div>
+                                              </li>
+                                                                                              <li>
+                                                  <div class="media">
+                                                      <a href="/product/KB-LENOVO-THINKPAD-E550">
+                                                          <img alt="KB LENOVO THINKPAD E550 - کیبورد لپ تاپ لنووو" class="me-3"
+                                                               src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-E5501736148579.jpg">
+                                                      </a>
+                                                      <div class="media-body">
+                                                          <a href="/product/KB-LENOVO-THINKPAD-E550">
+                                                              <p>KB LENOVO THINKPAD E550 - کیبورد لپ تاپ لنووو</p>
+                                                          </a>
+                                                          <h5>
+                                                              <span>1 * 1650000 تومان</span>
+                                                          </h5>
+                                                      </div>
+                                                  </div>
+                                                  <div class="close-circle">
+                                                      <a href="#">
+                                                          <i class="fa fa-times deleteCartProduct" data-cart-id="215"
+                                                             data-product-id="yYv7GNt9h2" aria-hidden="true"></i>
+                                                      </a>
+                                                  </div>
+                                              </li>
+                                          
+                                          <li>
+                                              <div class="total">
+                                                  <h5>مجموع <span>8,050,000 تومان</span></h5>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="buttons fs-6 outline-none" id="button-font">
+                                                  <button href="https://kalabiar.com/cart" class="view-cart btn-outline-danger rounded-pill py-2 px-4 ms-2">سبد خرید</button>
+                                                  <button href="https://kalabiar.com/register_destination_address" class="checkout btn-danger rounded-pill py-2 px-4">پرداخت</button>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </li>
+
+                                                                                                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    var urlDelete = 'https://kalabiar.com/removeCartProduct';
+    var url = 'https://kalabiar.com/removeWishlistProduct';
+</script>
+
+
+
+    <section class="p-0 layout-7">
+        <div class="slider-animate home-slider">
+                            <div>
+                    <div class="home text-center" style="max-height:53vh !important; ">
+                        <img src="https://kalabiar.com/storage/slider/3331738831881.png" alt="اعطای نمایندگی فروش" class="bg-img blur-up lazyload">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="slider-contain">
+                                        <div>
+                                            <h4 class="animated" data-animation-in="fadeInUp"></h4>
+                                            <h3 class="animated font-cormorant" data-animation-in="fadeInUp"
+                                                data-delay-in="0.3"></h3>
+                                            <a href="https://www.qoqnoosit.com/formpage/Representation-request-form" class="btn btn-solid animated"
+                                               data-animation-in="fadeInUp"
+                                               data-delay-in="0.5">اعطای نمایندگی فروش</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </section>
+
+    <section class="vector-category">
+        <div class="container">
+            <div class="vector-slide-8 category-slide margin-default ratio_square">
+                                    <div class="">
+                        <a href="https://kalabiar.com/category/laptop_keyboard">
+                            <div class="img-category">
+                                <div class="img-sec">
+                                    <img src="https://kalabiar.com/storage/product/kb1736071193.png" class="img-fluid" alt="keyboard">
+                                </div>
+                                <h4>keyboard</h4>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="">
+                        <a href="https://kalabiar.com/category/laptop-ram">
+                            <div class="img-category">
+                                <div class="img-sec">
+                                    <img src="https://kalabiar.com/storage/product/21733152433.png" class="img-fluid" alt="رم">
+                                </div>
+                                <h4>رم</h4>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="">
+                        <a href="https://kalabiar.com/category/laptop-led">
+                            <div class="img-category">
+                                <div class="img-sec">
+                                    <img src="https://kalabiar.com/storage/product/11733152560.png" class="img-fluid" alt="LED">
+                                </div>
+                                <h4>LED</h4>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="">
+                        <a href="https://kalabiar.com/category/laptop-ssd">
+                            <div class="img-category">
+                                <div class="img-sec">
+                                    <img src="https://kalabiar.com/storage/product/31733152689.png" class="img-fluid" alt="ssd">
+                                </div>
+                                <h4>ssd</h4>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="">
+                        <a href="https://kalabiar.com/category/laptop-hhd">
+                            <div class="img-category">
+                                <div class="img-sec">
+                                    <img src="https://kalabiar.com/storage/product/41733152817.png" class="img-fluid" alt="هارد">
+                                </div>
+                                <h4>هارد</h4>
+                            </div>
+                        </a>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container category-button">
+        <section class="section-b-space border-section border-bottom-0">
+            <div class="row partition1">
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/Golden Memory"
+                                                                          class="btn btn-outline btn-block">Golden Memory</a>
+                    </div>
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/kingston"
+                                                                          class="btn btn-outline btn-block">kingston</a>
+                    </div>
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/samsung"
+                                                                          class="btn btn-outline btn-block">samsung</a>
+                    </div>
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/Acer"
+                                                                          class="btn btn-outline btn-block">Acer</a>
+                    </div>
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/Asus"
+                                                                          class="btn btn-outline btn-block">Asus</a>
+                    </div>
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/DELL"
+                                                                          class="btn btn-outline btn-block">DELL</a>
+                    </div>
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/LENOVO"
+                                                                          class="btn btn-outline btn-block">LENOVO</a>
+                    </div>
+                                    <div class="col brandBox"><a href="https://kalabiar.com/brand/BOE"
+                                                                          class="btn btn-outline btn-block">BOE</a>
+                    </div>
+                            </div>
+        </section>
+    </div>
+
+            <section class="pb-0 ratio2_1">
+            <div class="container">
+                <div class="row partition2">
+                                            <div class="col-md-6">
+                            <a href="https://kalabiar.com/category/laptop-led">
+                                <div class="collection-banner">
+                                    <div class="img-part">
+                                        <img src="https://kalabiar.com/storage/banner/11737800741.jpg" class="img-fluid blur-up lazyload bg-img"
+                                             alt="LED">
+                                    </div>
+                                    <div class="contain-banner">
+                                        <div>
+                                            <h4 class="text-white"></h4>
+                                            <h2 class="text-capitalize"></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-6">
+                            <a href="https://www.qoqnoosit.com/formpage/Representation-request-form">
+                                <div class="collection-banner">
+                                    <div class="img-part">
+                                        <img src="https://kalabiar.com/storage/banner/21737800691.jpg" class="img-fluid blur-up lazyload bg-img"
+                                             alt="نمایندگی">
+                                    </div>
+                                    <div class="contain-banner">
+                                        <div>
+                                            <h4 class="text-white"></h4>
+                                            <h2 class="text-capitalize"></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+        <style>
+        .product-image-link {
+            display: block;
+            width: 320px;
+            height: 256px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+    </style>
+
+    
+                                <section class="section-b-space tools_product ratio_asos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="title2">
+                                <h2 class="title-inner2">keyboard</h2>
+                                <h4>فروش کیبورد لپتاپ</h4>
+                            </div>
+                            <div class="product-5 game-product product-m no-arrow">
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/KB-LENOVO-THINKPAD-T440"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-T4401736147994.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="KB LENOVO THINKPAD T440 - کیبورد لبتاب لنووو"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="yEdPpW7n1G"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="yEdPpW7n1G"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="yEdPpW7n1G"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  addtocart
+                                                " data-product-id="yEdPpW7n1G"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            <a href="/product/KB-LENOVO-THINKPAD-T440" class="text-secondary">
+                                                <p class="fs-5 mobile-size">
+                                                   کیبورد لپتاب لنووو
+                                                    </p>
+                                                 <span>KB LENOVO THINKPAD T440</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                 <span class="text-secondary">1,190,0 تومان</span>
+                                             </div>
+                                          </div>
+
+                                          
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/KB-LENOVO-THINKPAD-E590"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-E5901736148376.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="KB LENOVO THINKPAD E590 - کیبورد لپ تاپ لنووو"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="j5M7UPZTuC"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="j5M7UPZTuC"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="j5M7UPZTuC"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  addtocart
+                                                " data-product-id="j5M7UPZTuC"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/KB-LENOVO-THINKPAD-E590" class="text-secondary">
+                                                <p class="fs-5 mobile-size"> کیبورد لپ تاپ لنووو</p>
+                                                <span>KB LENOVO THINKPAD E590</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,550,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/KB-LENOVO-THINKPAD-E550"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-E5501736148579.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="KB LENOVO THINKPAD E550 - کیبورد لپ تاپ لنووو"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="yYv7GNt9h2"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="yYv7GNt9h2"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="yYv7GNt9h2"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="yYv7GNt9h2"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/KB-LENOVO-THINKPAD-E550" class="text-secondary">
+                                                <p class="fs-5 mobile-size">کیبورد لپ تاپ لنووو</p>
+                                                <span>KB LENOVO THINKPAD E550</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,650,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/KB-LENOVO-THINKPAD-E480"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-E4801736148786.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="KB LENOVO THINKPAD E480 - کیبورد لپ تاپ لنووو"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="jaJtGMUQXh"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="jaJtGMUQXh"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="jaJtGMUQXh"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="jaJtGMUQXh"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/KB-LENOVO-THINKPAD-E480" class="text-secondary">
+                                                <p class="fs-5 mobile-size">کیبورد لپ تاپ لنووو</p>
+                                                <span>KB LENOVO THINKPAD E480</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,250,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/KB-LENOVO-THINKPAD-E15"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-E151736148964.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="KB LENOVO THINKPAD E15 - کیبورد لپ تاپ لنووو"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="frkdX6EMmR"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="frkdX6EMmR"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="frkdX6EMmR"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  addtocart
+                                                " data-product-id="frkdX6EMmR"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/KB-LENOVO-THINKPAD-E15" class="text-secondary">
+                                                <p class="fs-5 mobile-size">کیبورد لپ تاپ لنووو</p>
+                                                <span>KB LENOVO THINKPAD E15</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,900,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/KB-LENOVO-THINKPAD-E14"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/LENOVO-THINKPAD-E141736152184.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="KB LENOVO THINKPAD E14 - کیبورد لپ تاپ لنووو"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="SPjcTEheDM"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="SPjcTEheDM"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="SPjcTEheDM"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  addtocart
+                                                " data-product-id="SPjcTEheDM"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/KB-LENOVO-THINKPAD-E14" class="text-secondary">
+                                                <p class="fs-5 mobile-size">کیبورد لپ تاپ لنووو</p>
+                                                <span>KB LENOVO THINKPAD E14</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,850,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                            </div>
+                                                            <div class="text-center mt-5"><a target="_blank"
+                                                                                             
+                                                              href="https://kalabiar.com/category/laptop_keyboard">
+<button type="button" class="btn btn-outline-danger btn-lg px-4 py-2  fw-semibold rounded-pill shadow-sm" style=" font-size: 18px; min-width: 150px; ">بیشتر
+</button></a>
+</div>
+                    </div>
+                </div>
+            </section>
+            
+                                <section class="section-b-space tools_product ratio_asos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="title2">
+                                <h2 class="title-inner2">رم</h2>
+                                <h4>فروش رم لپتاپ</h4>
+                            </div>
+                            <div class="product-5 game-product product-m no-arrow">
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/RAM-DDR3-PC3L-4GB-1600-12800MHZ-1.35V"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/261732629580.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="رم DDR 3 PC3L 4GB 1600-12800MHZ 1.35V کینگستون"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="iON9MEmpPZ"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="iON9MEmpPZ"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="iON9MEmpPZ"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="iON9MEmpPZ"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/RAM-DDR3-PC3L-4GB-1600-12800MHZ-1.35V" class="text-secondary">
+                                                <p class="fs-5 mobile-size">رم کینگستون</p>
+                                                <span>DDR 3 PC3L 4GB 1600-12800MHZ 1.35V</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            550,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/RAM-DDR4-8GB-2400-MHZ-1.2V"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/251732628516.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="رم DDR 4 8GB 2400 MHZ 1.2V کینگستون"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="JQIBafbdo4"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="JQIBafbdo4"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="JQIBafbdo4"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add letmeknow " data-product-id="JQIBafbdo4"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/RAM-DDR4-8GB-2400-MHZ-1.2V" class="text-secondary">
+                                                <p class="fs-5 mobile-size">رم کینگستون</p>
+                                                <span>DDR 4 8GB 2400 MHZ 1.2V</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                            <span class="text-danger">ناموجود</span>
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/RAM-DDR4-4G-2666-MHZ-1.2"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/231732628210.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="رم DDR 4 4G 2666 MHZ 1.2 کینگستون"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="RAK2XBDEbN"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="RAK2XBDEbN"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="RAK2XBDEbN"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add letmeknow " data-product-id="RAK2XBDEbN"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/RAM-DDR4-4G-2666-MHZ-1.2" class="text-secondary">
+                                                <p class="fs-5 mobile-size">رم کینگستون</p>
+                                                <span>DDR 4 4G 2666 MHZ 1.2</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                            <span class="text-danger">ناموجود</span>
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/RAM-DDR-3-PC3-8GB-1333-1600MHZ-1.5V"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/151737799523.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="رم DDR 3 PC3 8GB 1333-10600MHZ 1.5V گلدن مموری"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="MdIsqFbUxa"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="MdIsqFbUxa"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="MdIsqFbUxa"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  addtocart
+                                                " data-product-id="MdIsqFbUxa"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/RAM-DDR-3-PC3-8GB-1333-1600MHZ-1.5V" class="text-secondary">
+                                                <p class="fs-5 mobile-size">رم گلدن مموری</p>
+                                                <span>DDR 3 PC3 8GB 1333-10600MHZ 1.5V</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,400,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/RAM-DDR-4-16GB-3200MHZ"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/211732627669.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="رم DDR 4 16GB 3200MHZ گلدن مموری"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="qfwuEnUvlB"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="qfwuEnUvlB"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="qfwuEnUvlB"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="qfwuEnUvlB"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/RAM-DDR-4-16GB-3200MHZ" class="text-secondary">
+                                                <p class="fs-5 mobile-size">رم گلدن مموری</p>
+                                                <span>DDR 4 16GB 3200MHZ</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            6,000,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/RAm-DDR3-8G-PC3L-1600-12800MHZ-1.35V"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/201732627476.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="رم DDR3 8G PC3L 1600-12800MHZ 1.35V گلدن مموری"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="F6wZBVJCyM"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="F6wZBVJCyM"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="F6wZBVJCyM"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  addtocart
+                                                " data-product-id="F6wZBVJCyM"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/RAm-DDR3-8G-PC3L-1600-12800MHZ-1.35V" class="text-secondary">
+                                                <p class="fs-5 mobile-size">رم گلدن مموری</p>
+                                                <span>DDR3 8G PC3L 1600-12800MHZ 1.35V</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,350,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                            </div>
+                                                            <div class="text-center mt-5"><a target="_blank"
+                                                                                             
+                                                              href="https://kalabiar.com/category/laptop_keyboard">
+<button type="button" class="btn btn-outline-danger btn-lg px-4 py-2  fw-semibold rounded-pill shadow-sm" style=" font-size: 18px; min-width: 150px; ">بیشتر
+</button></a>
+</div>
+                    </div>
+                </div>
+            </section>
+            
+                                <section class="section-b-space tools_product ratio_asos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="title2">
+                                <h2 class="title-inner2">LED</h2>
+                                <h4>خرید ال ای دی لپتاپ</h4>
+                            </div>
+                            <div class="product-5 game-product product-m no-arrow">
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/15-6-lec-slim-40-pin-4k-lp156ud1-sp-b1-laptop-display"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/Lp156ud1spb11737969414.png"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="صفحه نمایش 15.6 اینچ Lec Slim 40 پین 4K LP156UD1 SP B1 برای لپ‌تاپ"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="QLkGi8yjAM"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="QLkGi8yjAM"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="QLkGi8yjAM"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add letmeknow " data-product-id="QLkGi8yjAM"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/15-6-lec-slim-40-pin-4k-lp156ud1-sp-b1-laptop-display" class="text-secondary">
+                                                <p class="fs-5 mobile-size">صفحه نمایش 15.6 اینچ لپ‌تاپ</p>
+                                                <span>Lec Slim 40 pin 4K LP156UD1 SP B1</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary"> 
+                                                                                                            21,500,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/15-6-uslim-fhd-ips-touch-40-pin-edp-nv156fhm-t07-laptop-display"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/Nv156fhmt071737969430.png"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="صفحه نمایش 15.6 اینچ Uslim FHD IPS تاچ 40 پین EDP NV156FHM T07 برای لپ‌تاپ"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="ev0E7zBOI1"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="ev0E7zBOI1"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="ev0E7zBOI1"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  letmeknow " data-product-id="ev0E7zBOI1"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/15-6-uslim-fhd-ips-touch-40-pin-edp-nv156fhm-t07-laptop-display" class="text-secondary">
+                                                <p class="fs-5 mobile-size">صفحه نمایش 15.6 اینچ برای لپ‌تاپ</p>
+                                                <span>Uslim FHD IPS touch 40 pin EDP NV156FHM T07</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            6,210,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/15-6-uslim-fhd-ips-touch-40-pin-nv156-fhm-t01-laptop-display"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/Nv156fhmt011738412765.png"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="صفحه نمایش 15.6 اینچ Uslim FHD IPS تاچ 40 پین NV156 FHM T01 برای لپ‌تاپ"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="oQDM6u3SHl"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="oQDM6u3SHl"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="oQDM6u3SHl"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add letmeknow " data-product-id="oQDM6u3SHl"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/15-6-uslim-fhd-ips-touch-40-pin-nv156-fhm-t01-laptop-display" class="text-secondary">
+                                                <p class="fs-5 mobile-size">صفحه نمایش 15.6 اینچ برای لپ‌تاپ</p>
+                                                <span>Uslim FHD IPS touch 40 pin NV156 FHM T01</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            6,000,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/15-6-uslim-fhd-ips-144hz-40-pin-laptop-display"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/Nv156fhmnx11737969498.png"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="صفحه نمایش 15.6 اینچ Uslim FHD IPS 144Hz 40 پین برای لپ‌تاپ"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="eMKLuxybnO"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="eMKLuxybnO"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="eMKLuxybnO"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  letmeknow " data-product-id="eMKLuxybnO"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/15-6-uslim-fhd-ips-144hz-40-pin-laptop-display" class="text-secondary">
+                                                <p class="fs-5 mobile-size">صفحه نمایش 15.6 اینچ برای لپ‌تاپ</p>
+                                                <span>Uslim FHD IPS 144Hz 40 pin</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                            <span class="text-danger">ناموجود</span>
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/13-3-slim-40-pin-hd-laptop-display"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/N133bge_l311737969537.png"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="Led 13.3 slim 40 pin hd - ال ای دی 13.3 slim 40 pin hd"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="R6ugvOM3Ei"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="R6ugvOM3Ei"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="R6ugvOM3Ei"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  letmeknow " data-product-id="R6ugvOM3Ei"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/13-3-slim-40-pin-hd-laptop-display" class="text-secondary">
+                                                <p>Led 13.3 slim 40 pin hd - ال ای دی 13.3 slim 40 pin hd</p>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            1,900,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/USLIM-15.6-fhd-ips-26c"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/531731856190.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="LAPTOP LED USLIM 15.6 fhd ips 26c"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="MJwCBIz5NH"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="MJwCBIz5NH"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="MJwCBIz5NH"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add  addtocart
+                                                " data-product-id="MJwCBIz5NH"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/USLIM-15.6-fhd-ips-26c" class="text-secondary">
+                                                <p class="fs-5 mobile-size">LAPTOP LED USLIM 15.6 fhd ips 26c</p>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            3,800,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                            </div>
+                                                            <div class="text-center mt-5"><a target="_blank"
+                                                                                             
+                                                              href="https://kalabiar.com/category/laptop_keyboard">
+<button type="button" class="btn btn-outline-danger btn-lg px-4 py-2  fw-semibold rounded-pill shadow-sm" style=" font-size: 18px; min-width: 150px; ">بیشتر
+</button></a>
+</div>
+                    </div>
+                </div>
+            </section>
+            
+            
+                                <section class="section-b-space tools_product ratio_asos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="title2">
+                                <h2 class="title-inner2">هارد</h2>
+                                <h4>خرید هارد hhd لپتاپ</h4>
+                            </div>
+                            <div class="product-5 game-product product-m no-arrow">
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/SSD-1ترابایت-هارد-2.5-INCH-SATA3-golden-memory"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/1tb1730715944.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="هارد اس اس دی 1 ترابایت - گلدن مموری - SSD  1T 2.5 INCH SATA3"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="cQq8wn0kRp"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="cQq8wn0kRp"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="cQq8wn0kRp"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="cQq8wn0kRp"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/SSD-1ترابایت-هارد-2.5-INCH-SATA3-golden-memory" class="text-secondary">
+                                                <p class="fs-5 mobile-size">هارد اس اس دی 1 ترابایت </p>
+                                                <p class="fs-5 mobile-size">گلدن مموری</p>
+                                                <span>SSD  1T 2.5 INCH SATA3</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                                                                                <span class="text-secondary">
+                                                                                                            5,400,000
+                                                        
+
+                                                تومان
+                                            </span>
+                                                
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/SSD-128g-2.5-INCH-SATA3-golden-memory"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/1281730715743.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="هارد اس اس دی 128 گیگ - گلدن مموری - SSD  128 g 2.5 INCH SATA3"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="IQGKfJY5nZ"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="IQGKfJY5nZ"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="IQGKfJY5nZ"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="IQGKfJY5nZ"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/SSD-128g-2.5-INCH-SATA3-golden-memory" class="text-secondary">
+                                                <p class="fs-5 mobile-size">هارد اس اس دی 128 گیگ</p>
+                                                <p class="fs-5 mobile-size">گلدن مموری</p>
+                                                <span>SSD  128 g 2.5 INCH SATA3</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                            <span class="text-danger">ناموجود</span>
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/SSD-512-2.5-INCH-SATA3-golden-memory"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/5121730713425.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="هارد اس اس دی 512 گیگ - گلدن مموری - SSD 2.5 INCH SATA3"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="vBK6U7Dp3J"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="vBK6U7Dp3J"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="vBK6U7Dp3J"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="vBK6U7Dp3J"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/SSD-512-2.5-INCH-SATA3-golden-memory" class="text-secondary">
+                                                <p class="fs-5 mobile-size">هارد اس اس دی 512 گیگ</p>
+                                                <p class="fs-5 mobile-size">گلدن مموری</p>
+                                                <span>SSD 2.5 INCH SATA3</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                            <span class="text-danger">ناموجود</span>
+                                                                                    </div>
+                                                                            </div>
+                                                                                                        <div class="product-box  ">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/product/SSD-2.5-INCH-SATA3"
+                                                   class="product-image-link"><img
+                                                        src="https://kalabiar.com/storage/product/2561730715506.jpg"
+                                                        class="img-fluid lazyload blur-up"
+                                                        alt="هارد اس اس دی 256 گیگ - گلدن مموری - فروشگاه کالابیار - SSD 2.5 INCH SATA3"></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <a href="javascript:void(0)" class="addToWishlist"
+                                                   data-product-id="hX7qiKADIP"
+                                                   title="افزودن به علاقمندی" tabindex="0"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                   class="quick-view"
+                                                   data-product-id="hX7qiKADIP"
+                                                   data-bs-target="#quick-view"
+                                                   title="نمایش سریع"
+                                                   tabindex="0"><i class="ti-search" aria-hidden="true"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   data-product-id="hX7qiKADIP"
+                                                   class="compare" title="مقایسه" tabindex="0"><i class="ti-reload"
+                                                                                                  aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                            <div class="add-button custom-add addtocart
+                                                " data-product-id="hX7qiKADIP"
+                                            >
+                                                افزودن به سبد خرید
+                                            </div>
+                                        </div>
+                                        <div class="product-detail">
+                                            
+                                            
+                                            
+                                            
+                                            <a href="/product/SSD-2.5-INCH-SATA3" class="text-secondary">
+                                                <p class="fs-5 mobile-size">هارد اس اس دی 256 گیگ</p>
+                                                <p class="fs-5 mobile-size">گلدن مموری</p>
+                                                <span>SSD 2.5 INCH SATA3</span>
+                                            </a>
+                                            <div class="spaceBetweenButtunandText"></div>
+                                                                                            <span class="text-danger">ناموجود</span>
+                                                                                    </div>
+                                                                            </div>
+                                                            </div>
+                                                            <div class="text-center mt-5"><a target="_blank"
+                                                                                             
+                                                              href="https://kalabiar.com/category/laptop_keyboard">
+<button type="button" class="btn btn-outline-danger btn-lg px-4 py-2  fw-semibold rounded-pill shadow-sm" style=" font-size: 18px; min-width: 150px; ">بیشتر
+</button></a>
+</div>
+                    </div>
+                </div>
+            </section>
+            
+
+    <!-- blog section -->
+    <section class="blog ratio3_2 pt-0 section-b-space slick-default-margin">
+        <div class="container border-section border-bottom-0">
+            <div class="row section-t-space">
+                <div class="col-md-12">
+                    <div class="title2">
+                        <p class="title-inner2">آخرین وبلاگ ها</p>
+                    </div>
+                    <div class="slide-3 no-arrow">
+                                                    <div class="col-md-12">
+                                <a target="_blank" href="/blog/how-to-free-up-laptop-hard-drive-space">
+                                    <div class="">
+                                        <div>
+                                            <img src="https://kalabiar.com/storage/product/Capture1752518377.jpg" alt="چگونه فضای هارد لپ‌تاپ را آزاد کنیم؟ (بهترین روش‌ها برای مدیریت و بهینه‌سازی فضای هارد)"
+                                                 class="img-fluid blur-up lazyload bg-img">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="blog-details">
+                                    <p> تیر 1404</p>
+                                    <a target="_blank"
+                                       href="/blog/how-to-free-up-laptop-hard-drive-space">
+                                        <p>چگونه فضای هارد لپ‌تاپ را آزاد کنیم؟ (بهترین روش‌ها برای مدیریت و بهینه‌سازی فضای هارد)</p>
+                                    </a>
+                                    
+                                    
+                                </div>
+                            </div>
+                                                    <div class="col-md-12">
+                                <a target="_blank" href="/blog/how-to-clean-laptop-screen-guide">
+                                    <div class="">
+                                        <div>
+                                            <img src="https://kalabiar.com/storage/product/11738493748.jpg" alt="نحوه تمیز کردن صفحه‌نمایش لپ‌تاپ: راهنمای کامل و نکات ضروری برای نگهداری"
+                                                 class="img-fluid blur-up lazyload bg-img">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="blog-details">
+                                    <p> بهمن 1403</p>
+                                    <a target="_blank"
+                                       href="/blog/how-to-clean-laptop-screen-guide">
+                                        <p>نحوه تمیز کردن صفحه‌نمایش لپ‌تاپ: راهنمای کامل و نکات ضروری برای نگهداری</p>
+                                    </a>
+                                    
+                                    
+                                </div>
+                            </div>
+                                                    <div class="col-md-12">
+                                <a target="_blank" href="/blog/how-to-choose-the-right-ram-for-your-laptop">
+                                    <div class="">
+                                        <div>
+                                            <img src="https://kalabiar.com/storage/product/11738498263.jpg" alt="راهنمای کامل خرید و انتخاب رم مناسب برای لپ‌تاپ: همه‌چیز درباره رم لپ‌تاپ و تاثیر آن بر عملکرد"
+                                                 class="img-fluid blur-up lazyload bg-img">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="blog-details">
+                                    <p> بهمن 1403</p>
+                                    <a target="_blank"
+                                       href="/blog/how-to-choose-the-right-ram-for-your-laptop">
+                                        <p>راهنمای کامل خرید و انتخاب رم مناسب برای لپ‌تاپ: همه‌چیز درباره رم لپ‌تاپ و تاثیر آن بر عملکرد</p>
+                                    </a>
+                                    
+                                    
+                                </div>
+                            </div>
+                                                    <div class="col-md-12">
+                                <a target="_blank" href="/blog/why-laptop-is-slow-reasons-and-solutions-to-improve-speed">
+                                    <div class="">
+                                        <div>
+                                            <img src="https://kalabiar.com/storage/product/11746437518.jpg" alt="چرا لپ‌تاپ کند می‌شود؟ بهترین راه حل‌ها برای افزایش سرعت لپ تاپ"
+                                                 class="img-fluid blur-up lazyload bg-img">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="blog-details">
+                                    <p> اردیبهشت 1404</p>
+                                    <a target="_blank"
+                                       href="/blog/why-laptop-is-slow-reasons-and-solutions-to-improve-speed">
+                                        <p>چرا لپ‌تاپ کند می‌شود؟ بهترین راه حل‌ها برای افزایش سرعت لپ تاپ</p>
+                                    </a>
+                                    
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section end-->
+    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content quick-view-modal">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="quick-view-img"><img src="" alt=""
+                                                             class="img-fluid blur-up lazyload quickViewImg"></div>
+                        </div>
+                        <div class="col-lg-6 rtl-text">
+                            <div class="product-right">
+                                <h2 class="product_title_quick"></h2>
+                                <h3 class="product_price_quick"></h3>
+
+                                <div class="border-product">
+                                    <h6 class="product-title">جزییات</h6>
+                                    <p class="product_details_quick"></p>
+                                </div>
+                                <div class="product-description border-product">
+                                    <h6 class="product-title">تعداد</h6>
+                                </div>
+                                <div class="product-buttons">
+                                    <a href="#" class="btn btn-solid addtocart">اضافه به سبد خرید</a>
+                                    <a href="#" class="btn btn-solid productPageDetails">جزییات</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="letMeKnow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-success fw-bold" id="exampleModalLabel">به من اطلاع بده</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <p>موجودی محصول تمام شده است. برای اطلاع از موجودی محصول شماره تلفن خود را ثبت کنید. </p>
+                    <form action="https://kalabiar.com/registration-mobile-let-me-know" method="post">
+                        <input type="hidden" name="_token" value="cyQlPUc2UPP3mEDMU0sa4tUuD7M3oayX84wlCbGl" autocomplete="off">                        <input type="hidden" class="productIdLetmeknow" name="product_id" value="">
+                        <input type="text" name="mobile" id="" placeholder="شماره موبایل" class="form-control">
+                        <input type="submit" value="ثبت" class="btn btn-sm btn-success rounded-pill float-end mt-1">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm rounded-pill" data-bs-dismiss="modal">بستن
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="footer-light">
+    <div class="light-layout">
+        <div class="container">
+            <section class="small-section border-section border-top-0">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="subscribe">
+                            <div>
+                                <p>اینو بینن!</p>
+                                <p>یه متن اینجاست.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form
+                            action=""
+                            class="form-inline subscribe-form auth-form needs-validation" method="post"
+                            id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                            <div class="form-group mx-sm-3">
+                                <input type="text" class="form-control" name="EMAIL" id="mce-EMAIL"
+                                       placeholder="ایمیل خود را وارد کنید" required="required">
+                            </div>
+                            <button type="submit" class="btn btn-solid " id="mc-submit">اشتراک</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="section-b-space light-layout">
+        <div class="container">
+            <div class="row footer-theme partition-f">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-title footer-mobile-title">
+                        <h4>درباره ما</h4>
+                    </div>
+
+                    <div class="footer-contant">
+                        <div class="footer-logo"><img class="logoSizeInfo" src="https://kalabiar.com/storage/setting/logo1729075469.png"
+                                                      alt="Kalabiar"></div>
+                        <p>
+                            با کالا بیار کالاتو بیار...
+                        </p>
+                        <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=560869&Code=mc0L5Br6idyq8v9B6tm9nv8I6qhHay2l'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=560869&Code=mc0L5Br6idyq8v9B6tm9nv8I6qhHay2l' alt='' style='cursor:pointer' code='mc0L5Br6idyq8v9B6tm9nv8I6qhHay2l'></a>
+                        <div class="footer-social">
+                            <ul>
+                                                                    <li><a href="https://telegram.me/kalabiar_com"><i class="fa-brands fa-telegram"></i></a></li>
+                                                                                                    <li><a href="https://wa.me/+989122025305"><i
+                                                class="fa-brands fa-square-whatsapp"></i></a></li>
+                                                                                                    <li><a href="https://www.instagram.com/kalabiarcom/"><i class="fa-brands fa-square-instagram"></i></a>
+                                    </li>
+                                                                                                    <li><a href="https://twitter.com/kalabiar_com"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                                    <div class="col offset-xl-1">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h4>چرا ما</h4>
+                            </div>
+
+                                <div class="footer-contant">
+                                    <ul>
+                                        
+                                            <li><a href="https://kalabiar.com/blogs">بلاگ</a></li>
+
+                                        
+                                            <li><a href="https://kalabiar.com/aboutus">درباره ما</a></li>
+
+                                        
+                                            <li><a href="https://kalabiar.com/contactus">تماس با ما</a></li>
+
+                                                                            </ul>
+                                </div>
+
+                        </div>
+                    </div>
+                
+                <div class="col">
+                    <div class="sub-title">
+                        <div class="footer-title">
+                            <p>اطلاعات فروشگاه</p>
+                        </div>
+                        <div class="footer-contant">
+                            <ul class="contact-list">
+                                                                                                            <li><i class="fa-solid fa-location-dot"></i>میدان ولیعصر-مجتمع اداری ایرانیان-ورودی کوچه سومعه سرا-طبقه ۶-واحد۲
+                                        </li>
+                                                                                                                                                                                <a href="tel:02157834000">
+                                            <li>
+                                                <i class="fa-solid fa-phone"></i> 02157834000
+                                            </li>
+                                        </a>
+                                                                                                                                                                                <li><i class="fa-solid fa-envelope"></i>info@kalabiar.com
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="footer-end">
+                        <p><i class="fa fa-copyright" aria-hidden="true"></i> 1403 تمامی حقوق محفوظ است. طراحی و توسعه
+                            <a href="https://www.bala24.com/" target="_blank">بالا 24</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="tap-top top-cls">
+    <div>
+        <i class="fa fa-angle-double-up"></i>
+    </div>
+</div>
+
+
+<script src="./js/jquery-3.3.1.min.js"></script>
+
+
+<script src="./js/jquery-ui.min.js"></script>
+
+<script src="./js/jquery.exitintent.js"></script>
+<script src="./js/exit.js"></script>
+
+<script src="./js/slick.js"></script>
+
+<script src="./js/menu.js"></script>
+
+<script src="./js/lazysizes.min.js"></script>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/bootstrap-notify.min.js"></script>
+
+
+
+
+
+<script src="./js/script.js"></script>
+
+<script src="./js/functions/helpers.js"></script>
+<script src="./js/custom/custom.js"></script>
+
+<script>
+    $('figure.table').addClass('rtl-table');
+    document.querySelectorAll('li').forEach(li => {
+        li.innerHTML = li.innerHTML.replace(/(<br\s*\/?>|\&nbsp;)+$/g, '');
+    });
+
+    function openSearch() {
+        document.getElementById("search-overlay").style.display = "block";
+    }
+
+    function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+    }
+
+</script>
+
+
+    <script>
+        // $(window).on('load', function () {
+        //     setTimeout(function () {
+        //         $('#exampleModal').modal('show');
+        //     }, 2500);
+        // });
+        var addToCart = 'https://kalabiar.com/addToCart';
+        var addToWishlist = 'https://kalabiar.com/addToWishlist';
+        var addToCompare = 'https://kalabiar.com/addToCompare';
+        var compare = 'https://kalabiar.com/compare';
+        var productQuickView = 'https://kalabiar.com/productQuickView';
+        var root = 'https://kalabiar.com/';
+        var letMeKnowErrors = false;
+        var errors = [];
+            </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/custom/home.js"></script>
+
+</body>
+
+</html>

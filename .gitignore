@@ -1,0 +1,12 @@
+# Ignore everything
+/*
+
+# But keep the .gitignore file itself
+!.gitignore
+
+# Exclude (allow) the css folder and the specific file you want
+!/css/
+!/css/custom.css
+!/index.html
+!product.html
+!/product-page.html
