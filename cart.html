@@ -333,13 +333,13 @@
     </div>
 
     <section class="cart-section section-b-space">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="row">
                 <div class="col-sm-12 table-responsive-xs">
                     <table class="table cart-table">
                         <thead>
                         <tr class="table-head">
-                            <th scope="col">ردیف</th>
+                            <th scope="col" class="hidden-mobile">ردیف</th>
                             <th scope="col">تصویر</th>
                             <th scope="col">نام محصول</th>
                             <th scope="col">قیمت</th>
@@ -351,7 +351,7 @@
                         <tbody>
 
                                                                                                                     <tr>
-                                    <td class="td">
+                                    <td class="td hidden-mobile">
                                         <span class="badge bg-success">1</span>
                                     </td>
                                     <td class="td">
@@ -360,15 +360,18 @@
                                                 alt="KB LENOVO THINKPAD E590 - کیبورد لپ تاپ لنووو"></a>
                                     </td>
                                     <td class="td">
-                                        <a href="product/KB-LENOVO-THINKPAD-E590">KB LENOVO THINKPAD E590 - کیبورد لپ تاپ لنووو</a>
+                                        <a href="product/KB-LENOVO-THINKPAD-E590" id="mob-text">
+                                            <p class="mb-2">کیبورد لپ تاپ لنووو</p>
+                                            <span>KB LENOVO THINKPAD E590 </span>
+                                        </a>
                                         <div class="mobile-cart-content row">
                                             <div class="col">
                                                 <div class="qty-box">
                                                     <div class="input-group">
                                                         <input type="text" min="1" name="quantity"
                                                                data-id="240"
-                                                               class="form-control input-number quantity"
-                                                               value="1">
+                                                               class="form-control input-number quantity my-2"
+                                                               value="1" id="quantit-input">
                                                     </div>
                                                 </div>
                                             </div>
@@ -437,26 +440,29 @@
                 </div>
             </div>
 
-        </div>
+        <!-- </div> -->
     </section>
 
     <div class="container pt-5">
-        <div class="col-lg-5  translate-middle-y mt-5">
+
+        <!-- remove col-lg-5 -->
+        <div class="translate-middle-y mt-5 ">
 
                                             <div class="pt-5 pb-4">
                     <form action="https://www.kalabiar.com/executeCouponCode" method="post">
                         <input type="hidden" name="_token" value="eygidBhWV1HMIC2M3Xx4sF20aOAupCZJUfdujHBW" autocomplete="off">                        <div class="row align-items-center">
-                            <div class="col-lg-9">
+                            <!-- remove vol-lg-9 -->
+                            <div class="sale-wrapper">
                                                                     <label class="" for="coupon"> <span class="text-danger">برای اعمال کد تخفیف وارد سایت شود.</span></label>
-                                
-                                <input type="text" class="form-control rounded-pill"  disabled="disabled"
+                                <!-- remove disabled -->
+                                <input type="text" class="form-control rounded-pill sale-code"
                                         name="coupon" id="coupon"
                                        placeholder="کد تخفیف">
                             </div>
 
 
-                                <div class="col-auto pt-4">
-                                    <button type="submit" class="btn btn-info rounded-pill">اعمال</button>
+                                <div class="col-auto pt-2">
+                                    <button type="submit" class="btn-outline-danger rounded-pill py-1 px-4">اعمال</button>
                                 </div>
 
                         </div>
@@ -488,11 +494,11 @@
                     </tfoot>
                 </table>
 
-                <div class="row cart-buttons">
-                    <div class="col-6 text-start"><a href="https://www.kalabiar.com/products" class="btn btn-solid">ادامه خرید</a>
+                <div class="row cart-buttons mt-5">
+                    <div class="col-6 text-start"><a href="https://www.kalabiar.com/products" class="btn btn-danger rounded-pill fs-5 py-3 px-5 mobile-btn">ادامه خرید</a>
                     </div>
                                             <div class="col-6 text-end"><a href="https://www.kalabiar.com/register_destination_address"
-                                                       class="btn btn-solid">پرداخت</a>
+                                                       class="btn btn-danger rounded-pill  py-3 px-5 fs-5 mobile-btn">پرداخت</a>
                         </div>
                                     </div>
                     </div>
@@ -522,7 +528,7 @@
                                 <input type="text" class="form-control" name="EMAIL" id="mce-EMAIL"
                                        placeholder="ایمیل خود را وارد کنید" required="required">
                             </div>
-                            <button type="submit" class="btn btn-solid" id="mc-submit">اشتراک</button>
+                            <button type="submit" class="btn btn-danger subscribe-btn" id="mc-submit">اشتراک</button>
                         </form>
                     </div>
                 </div>
