@@ -146,12 +146,12 @@ h2{
 }
 
 /* moved from style.css */
-.product-box {
+/* .product-details {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-  }
+  } */
   #text-size {
     font-size: 0.12rem;
     font-weight: bold;
@@ -161,10 +161,10 @@ h2{
     font-family: Iransans;
   }
   @media (max-width: 767px) {
-    .product-box {
+    /* .product-details {
       display: block !important;
       align-items: center !important;
-    }
+    } */
     .product-image-link {
       width: 11.875rem !important;
       height: 12.5rem !important;
@@ -241,6 +241,12 @@ h2{
     line-height: 1.5rem !important;
     padding-bottom: 1rem;
   }
-
-
-
+  .product-text{
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .sidebar-product-text{
+    font-size: 0.8rem;
+    line-height: 1.5rem !important;
+    padding-bottom: 1rem;
+  }
