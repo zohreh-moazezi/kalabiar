@@ -99,8 +99,8 @@ h2{
 }
 
 .small-image-size{
-    width: 320px !important;
-    height: 256px !important;
+    width: 150px !important;
+    height: 150px !important;
 }
 
 .small-image-size img{
@@ -142,7 +142,8 @@ h2{
 
 
 .rtl .cart_qty_cls{
-    left:1px !important;
+    /* left:1px !important; */
+    right: 90%;
 }
 
 /* moved from style.css */
@@ -165,6 +166,10 @@ h2{
       display: block !important;
       align-items: center !important;
     } */
+    .rtl .main-menu .menu-right .icon-nav .mobile-cart{
+      left: 5%;
+    }
+    
     .product-image-link {
       width: 11.875rem !important;
       height: 12.5rem !important;
@@ -189,7 +194,8 @@ h2{
     .main-menu .menu-right .icon-nav .mobile-setting,
     .main-menu .menu-right .icon-nav .mobile-cart,
     .main-menu .menu-right .icon-nav .mobile-search {
-      top: 1rem !important;
+      top: 2rem !important;
+      right: 75%;
       /* left: 1rem !important ; */
       
     }
@@ -249,4 +255,8 @@ h2{
     font-size: 0.8rem;
     line-height: 1.5rem !important;
     padding-bottom: 1rem;
+  }
+  .subscribe-btn{
+    padding: 0.9rem 1rem;
+
   }
