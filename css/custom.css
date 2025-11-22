@@ -56,7 +56,7 @@ h2{
 @media (max-width: 577px){
     .rtl .main-menu .menu-right .icon-nav .mobile-wishlist{
         right: unset;
-        left: 30%;
+        left: 13%;
     }
     
     .mobile-accounttt{
@@ -142,7 +142,7 @@ h2{
 
 
 .rtl .cart_qty_cls{
-    left:1px !important;
+    right: 90%;
 }
 
 /* moved from style.css */
@@ -189,9 +189,12 @@ h2{
     .main-menu .menu-right .icon-nav .mobile-setting,
     .main-menu .menu-right .icon-nav .mobile-cart,
     .main-menu .menu-right .icon-nav .mobile-search {
-      top: 1rem !important;
+      top: 2rem !important;
+      right: 73%;
       /* left: 1rem !important ; */
-      
+    }
+    .rtl .main-menu .menu-right .icon-nav .mobile-cart {
+      left: 5%;
     }
     .mobile-size {
       font-size: 0.92rem !important;
@@ -273,9 +276,8 @@ h2{
   .sale-wrapper{
     margin-top: 3rem;
   }
-  
   .subscribe-btn{
-    padding: 0.9rem 2rem;
+    padding: 0.9rem 1rem;
   }
 
 
