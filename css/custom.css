@@ -56,7 +56,7 @@ h2{
 @media (max-width: 577px){
     .rtl .main-menu .menu-right .icon-nav .mobile-wishlist{
         right: unset;
-        left: 30%;
+        left: 13%;
     }
     
     .mobile-accounttt{
@@ -195,7 +195,7 @@ h2{
     .main-menu .menu-right .icon-nav .mobile-cart,
     .main-menu .menu-right .icon-nav .mobile-search {
       top: 2rem !important;
-      right: 75%;
+      right: 73%;
       /* left: 1rem !important ; */
       
     }
