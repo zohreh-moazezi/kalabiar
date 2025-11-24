@@ -56,7 +56,7 @@ h2{
 @media (max-width: 577px){
     .rtl .main-menu .menu-right .icon-nav .mobile-wishlist{
         right: unset;
-        left: 13%;
+        left: 30%;
     }
     
     .mobile-accounttt{
@@ -142,7 +142,7 @@ h2{
 
 
 .rtl .cart_qty_cls{
-    right: 90%;
+    left:1px !important;
 }
 
 /* moved from style.css */
@@ -189,12 +189,9 @@ h2{
     .main-menu .menu-right .icon-nav .mobile-setting,
     .main-menu .menu-right .icon-nav .mobile-cart,
     .main-menu .menu-right .icon-nav .mobile-search {
-      top: 2rem !important;
-      right: 73%;
+      top: 1rem !important;
       /* left: 1rem !important ; */
-    }
-    .rtl .main-menu .menu-right .icon-nav .mobile-cart {
-      left: 5%;
+      
     }
     .mobile-size {
       font-size: 0.92rem !important;
@@ -210,30 +207,7 @@ h2{
   .breadcrumb-path{
     margin-right: 1.5rem !important;
   }
-  .sale-code{
-    width: 60% !important;
-  }
-  #quantit-input{
-    width: 50%;
-    padding-block: 0;
-  }
-  #mob-text{
-    font-size: 0.8rem !important;
-    margin-bottom: 1rem;
-    display: block;
-  }
-  .hidden-mobile{
-    display: none;
-  }
-  .sale-wrapper{
-    margin-top: 8rem !important;
-  }
-  .cart-button{
-    padding: 0.3rem 2rem !important;
-  }
-  .mobile-btn{
-    padding: 1rem 2rem !important;
-  }
+  
   }
   .breadcrumb-path{
     display: flex !important;
@@ -266,18 +240,6 @@ h2{
     font-size: 0.8rem;
     line-height: 1.5rem !important;
     padding-bottom: 1rem;
-  }
-  tbody tr td{
-    text-align: center !important;
-  }
-  .sale-code{
-    width: 20%;
-  }
-  .sale-wrapper{
-    margin-top: 3rem;
-  }
-  .subscribe-btn{
-    padding: 0.9rem 1rem;
   }
 
 
