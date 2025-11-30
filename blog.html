@@ -7,28 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="icon" href="https://kalabiar.com/assets-front/images/favicon/1.png" type="image/x-icon">
-    <link rel="shortcut icon" href="https://kalabiar.com/assets-front/images/favicon/1.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon/1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon/1.png" type="image/x-icon">
 
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://kalabiar.com/assets-front/FontAwesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./FontAwesome/css/all.css">
 
-    <link rel="stylesheet" type="text/css" href="https://kalabiar.com/assets-front/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://kalabiar.com/assets-front/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/vendors/slick-theme.css">
 
-    <link rel="stylesheet" type="text/css" href="https://kalabiar.com/assets-front/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="./css/vendors/animate.css">
 
-    <link rel="stylesheet" type="text/css" href="https://kalabiar.com/assets-front/css/vendors/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="./css/vendors/themify-icons.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
           integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="https://kalabiar.com/assets-front/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://kalabiar.com/assets-front/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
 
 
     <title>نحوه تمیز کردن صفحه‌نمایش لپ‌تاپ: راهنمای کامل و نکات ضروری - کالابیار</title>
@@ -100,6 +100,44 @@
     </style>
 
         <meta name="csrf-token" content="wuk9BAMrQtul8mwbtyJjeD5mOK2uYgsHfvxfgDZy">
+        <!-- seo solution -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "headline": "نحوه تمیز کردن صفحه‌نمایش لپ‌تاپ: راهنمای کامل و نکات ضروری برای نگهداری",
+              "datePublished": "1403/11/15",
+              "dateModified": "1403/11/25",
+               "author": {
+                "@type": "Person",
+                "name": "نام نویسنده"
+              },
+              "about": {
+                "@type": "Article",
+                "identifier": "POST_ID",
+                "headline": "Article or product title"
+              },
+              "interactionStatistic": {
+                "@type": "InteractionCounter",
+                "interactionType": "https://schema.org/LikeAction",
+                "userInteractionCount": 12
+              }
+              "commentCount": 0,
+              "comment": []
+            }
+            </script>
+            <!-- we should update this section in backend when a user add new comment:
+            "commentCount": 3,
+"comment": [
+  {
+    "@type": "Comment",
+    "author": "Ali",
+    "datePublished": "2024-02-10",
+    "text": "مقاله عالی بود!"
+  }
+] -->
+
+            
 
 </head>
 
@@ -473,6 +511,59 @@
                         
                     
 
+            </div>
+           <section id="comments" class="comment-area">
+            <!-- <h2>دیدگاه کاربران</h2> -->
+
+            <!-- <div class="comment-box" id="comment-{{ comment.id }}">
+                <p class="comment-author">{{ comment.author }}</p>
+                <p class="comment-date">{{ comment.date }}</p>
+                <p class="comment-text">{{ comment.text }}</p>
+            
+                <a href="#comment-{{ comment.id }}" class="reply-btn">پاسخ دادن</a>
+            </div> -->
+            
+             <div class=" blog-detail-page comment  my-5">
+                <div class="row blog-contact">
+                    <div class="col-sm-12">
+                        <h2>نظر خود را بنویسید</h2>
+                        <form class="theme-form"  method="POST" action="/submit-comment">
+                            <input type="hidden" name="post_id" value="BLOG_ID">
+                            <input type="text" name="hp_field" style="display:none;">
+                            <input type="hidden" name="g-recaptcha-response" id="recaptcha">
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('SITE_KEY', {action: 'comment'}).then(function(token) {
+        document.getElementById('recaptcha').value = token;
+    });
+});
+</script>
+
+                            <div class="form-row row">
+                                <div class="col-md-12">
+                                    <label for="name">نام</label>
+                                    <input required name="name" type="text" class="form-control" id="name" placeholder="نام خود را وارد کنید"
+                                        >
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="email">ایمیل</label>
+                                    <input required name="email" type="text" class="form-control" id="email" placeholder="ایمیل خود را وارد کنید" >
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="comment">نظر</label>
+                                    <textarea required name="comment" class="form-control" placeholder="نظر خود را بنویسید"
+                                        id="comment" rows="6"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-danger subscribe-btn " type="submit">ارسال</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        
+           </section>
+           
             </div>
 
 
