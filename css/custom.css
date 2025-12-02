@@ -282,6 +282,20 @@ h2{
   .comment{
     font-family: Iransans !important;
   }
+  .comment-box{
+    margin-top: 2.5rem !important;
+  }
+  .name-date{
+    display: flex;
+    gap: 1rem;
+    font-size: larger !important;
+  }
+  .title{
+    font-size: large;
+  }
+  .reply-btn{
+    color: rgb(184, 182, 182);
+  }
 
 
 
