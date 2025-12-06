@@ -211,16 +211,16 @@ h2 {
   .toggle-nav {
     display: none !important;
   }
-  .main-menu .menu-right .icon-nav .mobile-setting,
-  .main-menu .menu-right .icon-nav .mobile-cart,
-  .main-menu .menu-right .icon-nav .mobile-search {
-    top: 2rem !important;
-    right: 73%;
-    /* left: 1rem !important ; */
-  }
-  .rtl .main-menu .menu-right .icon-nav .mobile-cart {
+  .rtl .main-menu .menu-right .icon-nav .mobile-cart{
     left: 5%;
   }
+  .main-menu .menu-right .icon-nav .mobile-setting,
+    .main-menu .menu-right .icon-nav .mobile-cart,
+    .main-menu .menu-right .icon-nav .mobile-search {
+      top: 2rem !important;
+      right: 73%;
+      /* left: 1rem !important ; */  
+    }
   .mobile-size {
     font-size: 0.92rem !important;
   }
@@ -258,6 +258,12 @@ h2 {
   }
   .mobile-btn {
     padding: 1rem 2rem !important;
+  }
+  .verify-title{
+    display: none;
+  }
+  .code-title{
+    margin-right: 0;
   }
 }
 .breadcrumb-path {
@@ -323,7 +329,7 @@ tbody tr td {
 }
 #otp-wrapper {
   direction: ltr !important;     
-  justify-content: flex-end !important;  
+  justify-content: center !important;  
   gap: 10px;
 }
 
@@ -337,5 +343,8 @@ tbody tr td {
   unicode-bidi: plaintext;
 }
 .login-page .theme-card .theme-form input{
-  padding: 0;
+  padding: 10px;
+}
+.code-title{
+  margin-right: 10rem;
 }
