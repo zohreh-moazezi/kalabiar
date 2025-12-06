@@ -38,9 +38,18 @@ h2 {
   animation: jump-shaking 1.2s infinite;
 }
 
+.partition1 {
+  gap: 3rem;
+}
+
 .brandBox {
-  width: fit-content;
-  min-width: 12vw;
+  flex: 0 0 auto;
+}
+
+.brandBox a {
+  white-space: nowrap;   
+  width: auto;           
+  display: inline-block; 
 }
 
 @keyframes jump-shaking {
